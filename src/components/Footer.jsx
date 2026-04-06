@@ -18,9 +18,9 @@ const Footer = () => {
               High-performance digital marketing built exclusively for commercial construction suppliers and contractors across Australasia.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-              <img src="/images/certifications/google-partner.webp" alt="Google Partner" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
-              <img src="/images/certifications/bing-ads-certified.png" alt="Bing Ads Certified" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
-              <img src="/images/certifications/meta-partner.jpeg" alt="Meta Business Partner" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/google-partner.webp`} alt="Google Partner" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/bing-ads-certified.png`} alt="Bing Ads Certified" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/meta-partner.jpeg`} alt="Meta Business Partner" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
             </div>
           </div>
           
@@ -77,7 +77,7 @@ const Footer = () => {
               { file: "Meta-Logo.png", alt: "Meta" },
               { file: "Antigravity.png", alt: "Antigravity" }
             ].map((logo, i) => (
-              <img key={i} src={`/images/tools/${logo.file}`} width="100" height="30" loading="lazy" alt={logo.alt} style={{ maxHeight: '30px', maxWidth: '100px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.5)' }} />
+              <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="100" height="30" loading="lazy" alt={logo.alt} style={{ maxHeight: '30px', maxWidth: '100px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.5)' }} />
             ))}
           </div>
         </div>

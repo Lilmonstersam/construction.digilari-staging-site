@@ -95,7 +95,7 @@ const Home = () => {
               <div style={{ display: 'flex' }}>
                 {["CEO - Sean Brown.jpeg", "Account Manager - Bridie Conroy.jpeg", "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg", "Paid Media Specialist - Marcela Vildoza.jpeg"].map((img, i) => (
                   <div key={i} style={{ width: '36px', height: '36px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-bg)', marginLeft: i > 0 ? '-10px' : 0, position: 'relative', zIndex: 4 - i }}>
-                    <img src={`/images/team-members/${img}`} alt="Team member" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={`${import.meta.env.BASE_URL}images/team-members/${img}`} alt="Team member" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 ))}
               </div>
@@ -119,9 +119,9 @@ const Home = () => {
 
               {/* Certification Badges Row */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-                <img src="/images/certifications/google-partner.webp" alt="Google Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-                <img src="/images/certifications/bing-ads-certified.png" alt="Bing Ads Certified" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-                <img src="/images/certifications/meta-partner.jpeg" alt="Meta Business Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
+                <img src={`${import.meta.env.BASE_URL}images/certifications/google-partner.webp`} alt="Google Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
+                <img src={`${import.meta.env.BASE_URL}images/certifications/bing-ads-certified.png`} alt="Bing Ads Certified" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
+                <img src={`${import.meta.env.BASE_URL}images/certifications/meta-partner.jpeg`} alt="Meta Business Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
               </div>
 
               <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -369,7 +369,7 @@ const Home = () => {
                 "form-direct-logo.svg", "namoli-logo.webp", "pma-global-logo.jpeg", "streamline-carports-logo.svg"
               ]).map((logo, i) => (
                 <div key={i} style={{ padding: '0 2rem', display: 'flex', alignItems: 'center' }}>
-                  <img src={`/images/partner-logos/${logo}`} width="160" height="50" loading="lazy" alt="Partner Logo" style={{ maxHeight: '50px', maxWidth: '160px', objectFit: 'contain', filter: 'grayscale(100%) contrast(1.2)' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/partner-logos/${logo}`} width="160" height="50" loading="lazy" alt="Partner Logo" style={{ maxHeight: '50px', maxWidth: '160px', objectFit: 'contain', filter: 'grayscale(100%) contrast(1.2)' }} />
                 </div>
               ))}
             </div>
@@ -387,9 +387,9 @@ const Home = () => {
           <div style={{ padding: '3rem', background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid var(--color-border)', display: 'inline-block', maxWidth: '100%' }}>
             <h3 style={{ marginBottom: '2rem' }}>Accreditations & Certifications</h3>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', alignItems: 'center' }}>
-              <img src="/images/certifications/google-partner.webp" alt="Google Partner Badge" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
-              <img src="/images/certifications/bing-ads-certified.png" alt="Bing Ads Certified" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
-              <img src="/images/certifications/meta-partner.jpeg" alt="Meta Business Partner" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/google-partner.webp`} alt="Google Partner Badge" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/bing-ads-certified.png`} alt="Bing Ads Certified" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
+              <img src={`${import.meta.env.BASE_URL}images/certifications/meta-partner.jpeg`} alt="Meta Business Partner" width="160" height="80" loading="lazy" style={{ height: '70px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
             </div>
           </div>
         </div>
@@ -433,7 +433,7 @@ const Home = () => {
               }} className="team-card">
                 <div style={{ height: '280px', overflow: 'hidden', background: '#0f1115' }}>
                   <img 
-                    src={`/images/team-members/${member.img}`} 
+                    src={`${import.meta.env.BASE_URL}images/team-members/${member.img}`} 
                     alt={member.name}
                     loading="lazy"
                     style={{ 
@@ -480,7 +480,7 @@ const Home = () => {
             <div style={{ display: 'flex' }}>
               {["CEO - Sean Brown.jpeg", "Account Manager - Bridie Conroy.jpeg", "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg"].map((img, i) => (
                 <div key={i} style={{ width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: '3px solid var(--color-primary)', marginLeft: i > 0 ? '-12px' : 0, position: 'relative', zIndex: 3 - i }}>
-                  <img src={`/images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               ))}
             </div>

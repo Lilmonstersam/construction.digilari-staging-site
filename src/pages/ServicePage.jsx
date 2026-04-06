@@ -28,7 +28,7 @@ const IntegrationStack = () => (
         { file: "Meta-Logo.png", alt: "Meta" },
         { file: "Antigravity.png", alt: "Antigravity" }
       ].map((logo, i) => (
-        <img key={i} src={`/images/tools/${logo.file}`} width="120" height="36" loading="lazy" alt={logo.alt} style={{ height: '36px', width: 'auto', maxWidth: '120px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.2)', flexShrink: 0 }} />
+        <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="120" height="36" loading="lazy" alt={logo.alt} style={{ height: '36px', width: 'auto', maxWidth: '120px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.2)', flexShrink: 0 }} />
       ))}
     </div>
   </div>
@@ -283,7 +283,7 @@ const SimpleServiceLayout = ({ service, serviceId }) => (
             <div style={{ display: 'flex' }}>
               {["CEO - Sean Brown.jpeg", "Account Manager - Bridie Conroy.jpeg", "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg"].map((img, i) => (
                 <div key={i} style={{ width: '32px', height: '32px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-bg)', marginLeft: i > 0 ? '-8px' : 0, position: 'relative', zIndex: 3 - i }}>
-                  <img src={`/images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               ))}
             </div>
@@ -537,7 +537,7 @@ const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVi
                 <div style={{ display: 'flex' }}>
                   {["CEO - Sean Brown.jpeg", "Account Manager - Bridie Conroy.jpeg", "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg"].map((img, i) => (
                     <div key={i} style={{ width: '32px', height: '32px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-surface)', marginLeft: i > 0 ? '-8px' : 0, position: 'relative', zIndex: 3 - i }}>
-                      <img src={`/images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={`${import.meta.env.BASE_URL}images/team-members/${img}`} alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                   ))}
                 </div>

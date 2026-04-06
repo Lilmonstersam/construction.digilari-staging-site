@@ -104,9 +104,9 @@ const Contact = () => {
               <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--color-border)' }}>
                 <div style={{ fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '1rem', color: 'var(--color-primary)' }}>Our Accreditations</div>
                 <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
-                  <img src="/images/certifications/imgi_23_PartnerBadgeClickable.jpeg" alt="Google Partner" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
-                  <img src="/images/certifications/imgi_24_bingads_accredited_badge.jpeg" alt="Bing Ads Accredited" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
-                  <img src="/images/certifications/images.jpeg" alt="Meta Business Partner" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/certifications/imgi_23_PartnerBadgeClickable.jpeg`} alt="Google Partner" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/certifications/imgi_24_bingads_accredited_badge.jpeg`} alt="Bing Ads Accredited" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/certifications/images.jpeg`} alt="Meta Business Partner" style={{ height: '48px', width: 'auto', borderRadius: '4px' }} />
                 </div>
               </div>
             </div>

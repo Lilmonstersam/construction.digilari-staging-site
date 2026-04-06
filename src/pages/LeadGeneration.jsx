@@ -383,7 +383,7 @@ const LeadGeneration = () => {
                 { file: "Meta-Logo.png", alt: "Meta" },
                 { file: "Antigravity.png", alt: "Antigravity" }
               ].map((logo, i) => (
-                <img key={i} src={`/images/tools/${logo.file}`} width="140" height="40" loading="lazy" alt={logo.alt} style={{ maxHeight: '40px', maxWidth: '140px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.2)' }} />
+                <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="140" height="40" loading="lazy" alt={logo.alt} style={{ maxHeight: '40px', maxWidth: '140px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.2)' }} />
               ))}
             </div>
           </div>
