@@ -22,4 +22,4 @@ This repository has been optimized with the `github-repository-mockup-polishment
 1. **Package Management**: Validated `package.json` dependencies. System verified via `npm run build`.
 2. **GitHub Actions Deployment**: Setup `.github/workflows/deploy.yml` to automatically deploy to GitHub Pages on pushes to `main`.
 3. **Environment Security**: Updated `.gitignore` to prevent committing `.env` and `.env.local` files to protect environment variables.
-4. **Base Path Configuration**: Configured `base: '/construction-staging-site/'` in `vite.config.js` to ensure static assets load correctly when hosted on GitHub Pages subpaths.
+4. **Base Path Configuration**: Configured `base: '/construction.digilari-staging-site/'` in `vite.config.js` to ensure static assets load correctly when hosted on GitHub Pages subpaths.
