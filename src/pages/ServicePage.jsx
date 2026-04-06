@@ -28,7 +28,7 @@ const IntegrationStack = () => (
         { file: "Meta-Logo.png", alt: "Meta" },
         { file: "Antigravity.png", alt: "Antigravity" }
       ].map((logo, i) => (
-        <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="120" height="36" loading="lazy" alt={logo.alt} style={{ height: '36px', width: 'auto', maxWidth: '120px', objectFit: 'contain', filter: 'grayscale(100%) brightness(1.2)', flexShrink: 0 }} />
+        <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="120" height="36" loading="lazy" alt={logo.alt} style={{ height: '36px', width: 'auto', maxWidth: '120px', objectFit: 'contain', flexShrink: 0 }} />
       ))}
     </div>
   </div>
@@ -435,7 +435,7 @@ const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVi
         <section className="section" style={{ position: 'relative' }}>
           <div style={{ position: 'absolute', top: 0, right: 0, width: '50%', height: '100%', background: 'radial-gradient(ellipse at right, rgba(253, 155, 40, 0.05) 0%, transparent 60%)', pointerEvents: 'none' }}></div>
           <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '4rem', alignItems: 'start' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '4rem' }}>
               {differentiators.length > 0 && (
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-secondary)', marginBottom: '1.5rem' }}>
@@ -501,7 +501,7 @@ const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVi
 
       {/* Contact & FAQ */}
       <section id="contact" className="section">
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'start' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '4rem', alignItems: 'start' }}>
           
           {faqs.length > 0 && (
             <div>
@@ -566,7 +566,7 @@ const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVi
                   </div>
                 </div>
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>State (Optional)</label>
+                  <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>Country or State (Optional)</label>
                   <select style={{ width: '100%', padding: '0.75rem 1rem', background: 'var(--color-bg)', border: '1px solid var(--color-border)', borderRadius: '8px', color: 'var(--color-text)', outline: 'none' }}>
                     <option value="">Select State...</option>
                     <option value="NSW">New South Wales</option>
@@ -590,7 +590,7 @@ const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVi
                 <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>
                   <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.25rem' }}>Or contact us directly:</p>
                   <a href="tel:1300859358" style={{ color: 'var(--color-text)', fontWeight: 600, marginRight: '1rem' }}><span style={{ color: 'var(--color-primary)' }}>Phone:</span> 1300 859 358</a>
-                  <a href="mailto:hello@digilari.com.au" style={{ color: 'var(--color-text)', fontWeight: 600 }}><span style={{ color: 'var(--color-primary)' }}>Email:</span> hello@digilari.com.au</a>
+                  <a href="mailto:marketing@digilari.com.au" style={{ color: 'var(--color-text)', fontWeight: 600 }}><span style={{ color: 'var(--color-primary)' }}>Email:</span> marketing@digilari.com.au</a>
                 </div>
               </form>
             </div>

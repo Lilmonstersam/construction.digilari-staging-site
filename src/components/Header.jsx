@@ -1,12 +1,43 @@
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, ChevronDown, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY <= 80) {
+        setIsVisible(true);
+      } else {
+        if (currentScrollY < lastScrollY) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+          if (isOpen) setIsOpen(false); // Close mobile menu if scrolling down
+        }
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY, isOpen]);
 
   return (
-    <header style={{ borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-bg)', position: 'sticky', top: 0, zIndex: 1000 }}>
+    <header style={{ 
+      borderBottom: '1px solid var(--color-border)', 
+      backgroundColor: 'var(--color-bg)', 
+      position: 'sticky', 
+      top: 0, 
+      zIndex: 1000,
+      transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+      transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+    }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 1002 }}>
           <img 
@@ -95,6 +126,17 @@ const Header = () => {
         </nav>
         
         <div style={{ display: 'none', alignItems: 'center', gap: '1.5rem' }} className="desktop-nav">
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', borderRight: '1px solid var(--color-border)', paddingRight: '1.5rem' }}>
+            <a href="https://linkedin.com/company/digilari-media" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
+              <Linkedin size={18} />
+            </a>
+            <a href="https://facebook.com/digilarimedia" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
+              <Facebook size={18} />
+            </a>
+            <a href="https://instagram.com/digilari_media" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
+              <Instagram size={18} />
+            </a>
+          </div>
           <a href="tel:1300859358" style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary)' }}>
             1300 859 358
           </a>
