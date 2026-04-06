@@ -61,8 +61,10 @@ const Header = () => {
     <header style={{ 
       borderBottom: '1px solid var(--color-border)', 
       backgroundColor: 'var(--color-bg)', 
-      position: 'sticky', 
+      position: 'fixed', 
       top: 0, 
+      left: 0,
+      width: '100%',
       zIndex: 1000,
       transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
       transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'

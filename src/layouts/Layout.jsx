@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main style={{ position: 'relative' }}>
+      <main style={{ position: 'relative', paddingTop: '80px' }}>
         <Breadcrumbs />
         <StickyTOC />
         <Outlet />
