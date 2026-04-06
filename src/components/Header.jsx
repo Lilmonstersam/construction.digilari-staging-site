@@ -1,6 +1,28 @@
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
+
+const LinkedinIcon = ({ size = 18 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+  </svg>
+);
+
+const FacebookIcon = ({ size = 18 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.8l.2-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+  </svg>
+);
+
+const InstagramIcon = ({ size = 18 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -128,13 +150,13 @@ const Header = () => {
         <div style={{ display: 'none', alignItems: 'center', gap: '1.5rem' }} className="desktop-nav">
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', borderRight: '1px solid var(--color-border)', paddingRight: '1.5rem' }}>
             <a href="https://linkedin.com/company/digilari-media" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
-              <Linkedin size={18} />
+              <LinkedinIcon size={18} />
             </a>
             <a href="https://facebook.com/digilarimedia" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
-              <Facebook size={18} />
+              <FacebookIcon size={18} />
             </a>
             <a href="https://instagram.com/digilari_media" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s' }}>
-              <Instagram size={18} />
+              <InstagramIcon size={18} />
             </a>
           </div>
           <a href="tel:1300859358" style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary)' }}>
