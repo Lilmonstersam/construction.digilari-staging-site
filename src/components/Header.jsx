@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 const LinkedinIcon = ({ size = 18 }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -27,28 +27,35 @@ const InstagramIcon = ({ size = 18 }) => (
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0);
+  const isOpenRef = useRef(false);
+
+  // Keep ref in sync with state so the scroll handler always has the current value
+  useEffect(() => { isOpenRef.current = isOpen; }, [isOpen]);
+
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY.current;
+
+    if (currentScrollY <= 80) {
+      setIsVisible(true);
+    } else if (delta < -5) {
+      // Scrolling UP past 5px deadzone → show
+      setIsVisible(true);
+    } else if (delta > 5) {
+      // Scrolling DOWN past 5px deadzone → hide
+      setIsVisible(false);
+      if (isOpenRef.current) setIsOpen(false);
+    }
+    // Within ±5px deadzone → do nothing (prevents jitter)
+
+    lastScrollY.current = currentScrollY;
+  }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      if (currentScrollY <= 80) {
-        setIsVisible(true);
-      } else {
-        if (currentScrollY < lastScrollY) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-          if (isOpen) setIsOpen(false); // Close mobile menu if scrolling down
-        }
-      }
-      setLastScrollY(currentScrollY);
-    };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY, isOpen]);
+  }, [handleScroll]);
 
   return (
     <header style={{ 
