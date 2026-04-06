@@ -269,7 +269,7 @@ const Home = () => {
             Transparent, results-focused packages designed for commercial construction businesses. Every plan includes our Digital Results Guarantee.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto 3rem auto' }}>
+          <div className="mobile-carousel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto 3rem auto' }}>
             {[
               { name: 'Growth', price: 'From $2,500/mo', desc: 'Foundation-level SEO and content marketing for construction suppliers looking to build organic visibility.', features: ['Technical SEO Audit & Fixes', 'Content Strategy & Creation', 'Monthly Performance Reporting', 'Dedicated Account Manager'], color: 'var(--color-secondary)' },
               { name: 'Accelerate', price: 'From $5,000/mo', desc: 'Multi-channel growth combining SEO, paid media, and CRO for construction businesses ready to scale.', features: ['Everything in Growth', 'Google Ads Management', 'Conversion Rate Optimisation', 'Digital Results Guarantee'], color: 'var(--color-primary)', featured: true },
@@ -328,23 +328,21 @@ const Home = () => {
             overflow: 'hidden'
           }}>
             <div style={{ position: 'absolute', top: 0, right: 0, width: '150px', height: '150px', background: 'var(--color-primary)', opacity: '0.1', filter: 'blur(50px)' }}></div>
-            <h3 className="mb-4">Proven Growth in the Construction Sector</h3>
-            <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem', fontSize: '1rem' }}>
-              Duracube needed to pivot from a low-value B2C market to high-value B2B commercial washroom projects.
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
-              <div style={{ background: '#0f1115', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)' }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--color-text)' }}>+140%</div>
-                <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Global Organic Traffic</div>
+            <div style={{ marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', gap: '2px', marginBottom: '1rem' }}>
+                {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="var(--color-primary)" color="var(--color-primary)" />)}
               </div>
-              <div style={{ background: '#0f1115', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)' }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--color-text)' }}>+209%</div>
-                <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>High-Quality B2B Leads</div>
+              <blockquote style={{ fontSize: '1.1rem', color: 'var(--color-text)', fontStyle: 'italic', marginBottom: '1.5rem', lineHeight: 1.6 }}>
+                "PPG have seen 40% growth in revenue over the past 2 years implementing Digilari Media's SEO strategy and marketing guidance. We can't thank Digilari Media enough for helping us grow our business and achieve our goals. We look forward to working with Digilari in the future to continue our growth and to keep ahead in the digital technology world!"
+              </blockquote>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <img src={`${import.meta.env.BASE_URL}images/client-pfp/mark-webster-ppg.jpeg`} alt="Mark Webster" style={{ width: '56px', height: '56px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--color-primary)' }} />
+                <div>
+                  <div style={{ fontWeight: 700, color: 'var(--color-text)', fontSize: '1rem' }}>Mark Webster</div>
+                  <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', lineHeight: '1.2' }}>Owner at Premium Pools and Gardens Pty Ltd & Centenary Poolmart</div>
+                </div>
               </div>
             </div>
-            <Link to="/case-studies/duracube" className="text-gradient-primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600 }}>
-              Read the full case study <ArrowRight size={16} />
-            </Link>
           </div>
         </div>
       </section>
@@ -369,7 +367,7 @@ const Home = () => {
                 "form-direct-logo.svg", "namoli-logo.webp", "pma-global-logo.jpeg", "streamline-carports-logo.svg"
               ]).map((logo, i) => (
                 <div key={i} style={{ padding: '0 2rem', display: 'flex', alignItems: 'center' }}>
-                  <img src={`${import.meta.env.BASE_URL}images/partner-logos/${logo}`} width="160" height="50" loading="lazy" alt="Partner Logo" style={{ maxHeight: '50px', maxWidth: '160px', objectFit: 'contain', filter: 'grayscale(100%) contrast(1.2)' }} />
+                  <img src={`${import.meta.env.BASE_URL}images/partner-logos/${logo}`} width="160" height="50" loading="lazy" alt="Partner Logo" style={{ maxHeight: '50px', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -407,7 +405,7 @@ const Home = () => {
       {/* Meet the Experts Section */}
       <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
         <div className="container">
-          <div style={{ 
+          <div className="mobile-carousel" style={{ 
             display: 'grid', 
             gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
             gap: '2.5rem', 

@@ -31,7 +31,13 @@ body {
   flex-direction: column;
   -webkit-tap-highlight-color: transparent;
   font-variant-numeric: tabular-nums;
+  overflow-x: hidden;
 }
+
+html {
+  overflow-x: hidden;
+}
+
 
 #root {
   flex: 1;
@@ -273,4 +279,28 @@ p {
 .rounded-xl { border-radius: 16px; }
 .bg-surface { background-color: var(--color-surface); }
 .border-subtle { border: 1px solid var(--color-border); }
+
+@media (max-width: 768px) {
+  .mobile-carousel {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem !important;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .mobile-carousel > * {
+    flex: 0 0 85% !important;
+    scroll-snap-align: center;
+  }
+  .mobile-carousel {
+    grid-template-columns: none !important;
+  }
+}
+
 

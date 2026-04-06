@@ -101,14 +101,18 @@ const Header = () => {
           <Link to="/contact" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Strategy Session</Link>
         </div>
 
-        {/* Mobile menu toggle */}
-        <button 
-          className="mobile-toggle"
-          style={{ background: 'none', border: 'none', color: 'var(--color-text)', cursor: 'pointer', zIndex: 1002, position: 'relative' }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} color="#FD9B28" /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Header Actions */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 1002 }} className="mobile-actions">
+          <a href="tel:1300859358" style={{ fontWeight: 700, color: 'var(--color-primary)', fontSize: '0.95rem' }}>
+            1300 859 358
+          </a>
+          <button 
+            style={{ background: 'none', border: 'none', color: 'var(--color-text)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={28} color="#FD9B28" /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -123,28 +127,49 @@ const Header = () => {
         }}
         className="mobile-menu-container"
       >
-        <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', listStyle: 'none' }}>
-          <li><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Core Services</span></li>
+        <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', listStyle: 'none', paddingBottom: '4rem' }}>
+          <li><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Core Strategy</span></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/seo-agency" onClick={() => setIsOpen(false)}>Construction SEO</Link></li>
-          <li style={{ paddingLeft: '1rem' }}><Link to="/services/ppc-agency" onClick={() => setIsOpen(false)}>Google Ads</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/ppc-agency" onClick={() => setIsOpen(false)}>Google Ads Management</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/conversion-rate-optimisation" onClick={() => setIsOpen(false)}>Conversion Optimisation</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/inbound-and-content-marketing" onClick={() => setIsOpen(false)}>Technical Content Marketing</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/lead-generation" onClick={() => setIsOpen(false)}>AI Lead Generation</Link></li>
+
+          <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Advanced SEO & AI</span></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/aeo" onClick={() => setIsOpen(false)}>Answer Engine Optimisation</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/geo" onClick={() => setIsOpen(false)}>Generative Engine Optimisation</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/seo-agency/seo-migration" onClick={() => setIsOpen(false)}>Website SEO Migration</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/seo-agency/zero-click-search" onClick={() => setIsOpen(false)}>Zero Click Search Marketing</Link></li>
+
+          <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Social Media Hub</span></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/smm/linkedin" onClick={() => setIsOpen(false)}>LinkedIn</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/smm/facebook" onClick={() => setIsOpen(false)}>Facebook</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/smm/instagram" onClick={() => setIsOpen(false)}>Instagram</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/smm/tiktok" onClick={() => setIsOpen(false)}>TikTok</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/smm/x" onClick={() => setIsOpen(false)}>X (Twitter)</Link></li>
+
+          <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>About Digilari</span></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/why-digilari" onClick={() => setIsOpen(false)}>Why Choose Digilari?</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/our-process" onClick={() => setIsOpen(false)}>Our Strategic Process</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/digital-marketing-partner-program" onClick={() => setIsOpen(false)}>The Partner Program</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/digital-results-guarantee" onClick={() => setIsOpen(false)}>Digital Results Guarantee</Link></li>
+
+          <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Resources & Proof</span></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/case-studies" onClick={() => setIsOpen(false)}>Client Case Studies</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/articles" onClick={() => setIsOpen(false)}>Marketing Articles</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/faqs" onClick={() => setIsOpen(false)}>Frequently Asked Questions</Link></li>
           
-          <li style={{ marginTop: '1rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Company</span></li>
-          <li style={{ paddingLeft: '1rem' }}><Link to="/why-digilari" onClick={() => setIsOpen(false)}>Why Digilari</Link></li>
-          <li style={{ paddingLeft: '1rem' }}><Link to="/pricing" onClick={() => setIsOpen(false)}>Our Pricing</Link></li>
-          
-          <li style={{ textAlign: 'center', marginTop: '1rem' }}>
-            <a href="tel:1300859358" style={{ fontWeight: 600, fontSize: '1.25rem', color: 'var(--color-primary)' }}>1300 859 358</a>
-          </li>
-          
-          <li><Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setIsOpen(false)}>Book Strategy Session</Link></li>
+          <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Company</span></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/pricing" onClick={() => setIsOpen(false)}>Pricing</Link></li>
+
+          <li style={{ marginTop: '1.5rem' }}><Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setIsOpen(false)}>Book Strategy Session</Link></li>
         </ul>
       </div>
 
       <style>{`
         @media (min-width: 1000px) {
           .desktop-nav { display: flex !important; }
-          .mobile-toggle { display: none !important; }
+          .mobile-actions { display: none !important; }
           .mobile-menu-container { display: none !important; }
         }
       `}</style>
