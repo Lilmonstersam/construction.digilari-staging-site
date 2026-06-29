@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import Home from './pages/Home';
 import ServicePage from './pages/ServicePage';
@@ -11,6 +11,18 @@ import LocalServicePage from './pages/LocalServicePage';
 import ScrollToTop from './components/ScrollToTop';
 import Pricing from './pages/Pricing';
 import LeadGeneration from './pages/LeadGeneration';
+import ArticlePage from './pages/ArticlePage';
+import AccountBasedMarketing from './pages/AccountBasedMarketing';
+import TeamMemberPage from './pages/TeamMemberPage';
+import { articlesData } from './data/articles';
+
+// Routes article slugs that have full content to ArticlePage; others fall back
+// to the standard placeholder so existing links don't break.
+function ArticleRouter() {
+  const { slug } = useParams();
+  if (articlesData[slug]) return <ArticlePage />;
+  return <StandardPage pageId="article-placeholder" />;
+}
 
 function App() {
   return (
@@ -22,6 +34,7 @@ function App() {
           
           {/* Core Services */}
           <Route path="services/lead-generation" element={<LeadGeneration />} />
+          <Route path="services/account-based-marketing" element={<AccountBasedMarketing />} />
           <Route path="services/:serviceId" element={<ServicePage />} />
           <Route path="services/:categoryId/:serviceId" element={<ServicePage />} />
           
@@ -35,7 +48,10 @@ function App() {
           
           {/* Internal Hubs & Articles */}
           <Route path="articles" element={<StandardPage pageId="articles" />} />
-          <Route path="articles/:slug" element={<StandardPage pageId="article-placeholder" />} />
+          <Route path="articles/:slug" element={<ArticleRouter />} />
+
+          {/* Team Member Bios */}
+          <Route path="team/:memberId" element={<TeamMemberPage />} />
 
           {/* Standard Pages */}
           <Route path="faqs" element={<FaqPage />} />

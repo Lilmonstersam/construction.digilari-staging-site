@@ -23,6 +23,11 @@ export default function StickyTOC() {
     handleScroll();
 
     const timer = setTimeout(() => {
+      // Pages with their own in-article TOC (e.g. articles) suppress the global one
+      if (document.querySelector('[data-article-toc]')) {
+        setHeadings([]);
+        return;
+      }
       const h2s = Array.from(document.querySelectorAll('h2'));
       const items = h2s.map((h, i) => {
         if (!h.id) h.id = `heading-${i}`;

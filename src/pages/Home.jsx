@@ -412,45 +412,60 @@ const Home = () => {
             alignItems: 'start' 
           }}>
             {[
-              { name: "Sean Brown", role: "Managing Director", img: "CEO - Sean Brown.jpeg" },
+              { name: "Sean Brown", role: "Managing Director", img: "CEO - Sean Brown.jpeg", slug: "sean-brown" },
               { name: "Bridie Conroy", role: "Account Manager", img: "Account Manager - Bridie Conroy.jpeg" },
-              { name: "Hui-Sheng Yang", role: "AEO Strategist & AI Engineer", img: "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg" },
+              { name: "Hui-Sheng Yang", role: "AEO Strategist & AI Engineer", img: "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg", slug: "sheng-yang" },
               { name: "Marcela Vildoza", role: "Paid Media Specialist", img: "Paid Media Specialist - Marcela Vildoza.jpeg" },
-              { name: "Celine Rose Merto", role: "Lead Graphic Designer", img: "Lead Graphic Designer & Social Media Specialist - Celine Rose Merto.jpeg" },
+              { name: "Celine Rose Merto", role: "Lead Graphic Designer", img: "Lead Graphic Designer & Social Media Specialist - Celine Rose Merto.jpeg", slug: "celine-merto" },
               { name: "Aizel Quirante", role: "Social Media Specialist", img: "Social Media Specialist - Aizel Quirante.jpeg" },
-              { name: "Dorisa Ramos", role: "Social Media Specialist", img: "Social Media Specialist - Dorisa Ramos.jpeg" },
-              { name: "Roger Duran", role: "Lead Web Developer", img: "Web Developer - Roger Duran.jpeg" }
-            ].map((member, i) => (
-              <div key={i} style={{ 
-                background: '#0a0a0a', 
-                borderRadius: '12px', 
-                border: '1px solid var(--color-border)', 
+              { name: "Dorisa Ramos", role: "Social Media Specialist", img: "Social Media Specialist - Dorisa Ramos.jpeg", slug: "dorisa-ramos" },
+              { name: "Roger Duran", role: "Lead Web Developer", img: "Web Developer - Roger Duran.jpeg", slug: "roger-duran" }
+            ].map((member, i) => {
+              const cardInner = (
+                <>
+                  <div style={{ height: '280px', overflow: 'hidden', background: '#0f1115' }}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}images/team-members/${member.img}`}
+                      alt={member.name}
+                      loading="lazy"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'top center',
+                        filter: 'grayscale(30%)',
+                        transition: 'filter 0.3s ease, transform 0.5s ease'
+                      }}
+                      className="team-img"
+                    />
+                  </div>
+                  <div style={{ padding: '1.5rem 1rem' }}>
+                    <h4 style={{ margin: '0 0 0.25rem 0', fontSize: '1.1rem', color: 'var(--color-text)' }}>{member.name}</h4>
+                    <div style={{ color: 'var(--color-primary)', fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{member.role}</div>
+                    {member.slug && (
+                      <div style={{ marginTop: '0.75rem', color: 'var(--color-secondary)', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                        View Profile <ArrowRight size={12} />
+                      </div>
+                    )}
+                  </div>
+                </>
+              );
+              const cardStyle = {
+                background: '#0a0a0a',
+                borderRadius: '12px',
+                border: '1px solid var(--color-border)',
                 overflow: 'hidden',
                 transition: 'transform 0.3s ease, border-color 0.3s ease',
-                cursor: 'pointer'
-              }} className="team-card">
-                <div style={{ height: '280px', overflow: 'hidden', background: '#0f1115' }}>
-                  <img 
-                    src={`${import.meta.env.BASE_URL}images/team-members/${member.img}`} 
-                    alt={member.name}
-                    loading="lazy"
-                    style={{ 
-                      width: '100%', 
-                      height: '100%', 
-                      objectFit: 'cover',
-                      objectPosition: 'top center',
-                      filter: 'grayscale(30%)',
-                      transition: 'filter 0.3s ease, transform 0.5s ease'
-                    }} 
-                    className="team-img"
-                  />
-                </div>
-                <div style={{ padding: '1.5rem 1rem' }}>
-                  <h4 style={{ margin: '0 0 0.25rem 0', fontSize: '1.1rem', color: 'var(--color-text)' }}>{member.name}</h4>
-                  <div style={{ color: 'var(--color-primary)', fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{member.role}</div>
-                </div>
-              </div>
-            ))}
+                cursor: 'pointer',
+                textDecoration: 'none',
+                display: 'block'
+              };
+              return member.slug ? (
+                <Link key={i} to={`/team/${member.slug}`} style={cardStyle} className="team-card">{cardInner}</Link>
+              ) : (
+                <div key={i} style={cardStyle} className="team-card">{cardInner}</div>
+              );
+            })}
           </div>
           
           <style>{`

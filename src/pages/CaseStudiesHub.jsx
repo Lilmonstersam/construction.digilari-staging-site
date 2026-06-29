@@ -36,8 +36,15 @@ const CaseStudiesHub = () => {
               <div key={study.id} className="card fade-in" style={{ padding: '0', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
                 <div style={{ padding: '2.5rem', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary)', marginBottom: '1rem', fontWeight: 600, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    <TrendingUp size={16} /> Growth Case Study
+                    <TrendingUp size={16} /> {study.industry ? `${study.industry} Case Study` : 'Growth Case Study'}
                   </div>
+                  {study.categories && study.categories.length > 0 && (
+                    <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                      {study.categories.map((cat, idx) => (
+                        <span key={idx} style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', background: 'var(--color-bg)', border: '1px solid var(--color-border)', borderRadius: '100px', padding: '0.2rem 0.6rem' }}>{cat}</span>
+                      ))}
+                    </div>
+                  )}
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', lineHeight: '1.3' }}>{study.title}</h3>
                   <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem', lineHeight: '1.6', flexGrow: 1 }}>{study.intro}</p>
                   
