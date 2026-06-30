@@ -23,8 +23,10 @@ export default function StickyTOC() {
     handleScroll();
 
     const timer = setTimeout(() => {
-      // Pages with their own in-article TOC (e.g. articles) suppress the global one
-      if (document.querySelector('[data-article-toc]')) {
+      // The global sticky ToC is only shown on individual case study pages.
+      // Article pages render their own in-page ToC; all other pages have none.
+      const isCaseStudy = /^\/case-studies\/[^/]+/.test(location.pathname);
+      if (!isCaseStudy || document.querySelector('[data-article-toc]')) {
         setHeadings([]);
         return;
       }
@@ -70,7 +72,7 @@ export default function StickyTOC() {
       pointerEvents: isScrolled ? 'auto' : 'none', 
       transition: 'opacity 0.4s ease-in-out' 
     }}>
-      {/* Toggle Button — visible on ALL screen sizes */}
+      {/* Toggle Button - visible on ALL screen sizes */}
       <button 
         className="toc-toggle-btn"
         onClick={() => setIsOpen(!isOpen)}

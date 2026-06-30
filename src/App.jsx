@@ -13,6 +13,9 @@ import Pricing from './pages/Pricing';
 import LeadGeneration from './pages/LeadGeneration';
 import ArticlePage from './pages/ArticlePage';
 import AccountBasedMarketing from './pages/AccountBasedMarketing';
+import EmailMarketing from './pages/EmailMarketing';
+import CompetitorReview from './pages/CompetitorReview';
+import ArticlesHub from './pages/ArticlesHub';
 import TeamMemberPage from './pages/TeamMemberPage';
 import { articlesData } from './data/articles';
 
@@ -35,6 +38,7 @@ function App() {
           {/* Core Services */}
           <Route path="services/lead-generation" element={<LeadGeneration />} />
           <Route path="services/account-based-marketing" element={<AccountBasedMarketing />} />
+          <Route path="services/email-marketing" element={<EmailMarketing />} />
           <Route path="services/:serviceId" element={<ServicePage />} />
           <Route path="services/:categoryId/:serviceId" element={<ServicePage />} />
           
@@ -47,8 +51,11 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           
           {/* Internal Hubs & Articles */}
-          <Route path="articles" element={<StandardPage pageId="articles" />} />
+          <Route path="articles" element={<ArticlesHub />} />
           <Route path="articles/:slug" element={<ArticleRouter />} />
+
+          {/* Free Tools */}
+          <Route path="tools/competitor-review" element={<CompetitorReview />} />
 
           {/* Team Member Bios */}
           <Route path="team/:memberId" element={<TeamMemberPage />} />

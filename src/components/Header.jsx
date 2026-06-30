@@ -97,6 +97,8 @@ const Header = () => {
                     <li><Link to="/services/conversion-rate-optimisation">Conversion Optimisation</Link></li>
                     <li><Link to="/services/inbound-and-content-marketing">Technical Content Marketing</Link></li>
                     <li><Link to="/services/lead-generation">AI Lead Generation</Link></li>
+                    <li><Link to="/services/account-based-marketing">Account-Based Marketing</Link></li>
+                    <li><Link to="/services/email-marketing">Email Marketing (EDM)</Link></li>
                   </ul>
                 </div>
                 <div className="mega-item-col">
@@ -146,6 +148,7 @@ const Header = () => {
                   <ul>
                     <li><Link to="/case-studies">Client Case Studies</Link></li>
                     <li><Link to="/articles">Marketing Articles</Link></li>
+                    <li><Link to="/tools/competitor-review">Free Competitor Review</Link></li>
                     <li><Link to="/faqs">Frequently Asked Questions</Link></li>
                   </ul>
                 </div>
@@ -207,6 +210,8 @@ const Header = () => {
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/conversion-rate-optimisation" onClick={() => setIsOpen(false)}>Conversion Optimisation</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/inbound-and-content-marketing" onClick={() => setIsOpen(false)}>Technical Content Marketing</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/lead-generation" onClick={() => setIsOpen(false)}>AI Lead Generation</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/account-based-marketing" onClick={() => setIsOpen(false)}>Account-Based Marketing</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/email-marketing" onClick={() => setIsOpen(false)}>Email Marketing (EDM)</Link></li>
 
           <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Advanced SEO & AI</span></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/aeo" onClick={() => setIsOpen(false)}>Answer Engine Optimisation</Link></li>
@@ -230,6 +235,7 @@ const Header = () => {
           <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Resources & Proof</span></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/case-studies" onClick={() => setIsOpen(false)}>Client Case Studies</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/articles" onClick={() => setIsOpen(false)}>Marketing Articles</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/tools/competitor-review" onClick={() => setIsOpen(false)}>Free Competitor Review</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/faqs" onClick={() => setIsOpen(false)}>Frequently Asked Questions</Link></li>
           
           <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Company</span></li>

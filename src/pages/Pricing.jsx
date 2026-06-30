@@ -33,21 +33,22 @@ const Pricing = () => {
   const packages = [
     {
       id: 'basic',
-      name: 'The Digital Foundation',
-      tier: 'Basic Tier',
-      price: 'Starting at $2,500/mo',
+      name: 'The Digital Partner Program',
+      tier: 'Growth',
+      price: 'From $1,800/mo',
       color: '#0f1115',
       accent: 'var(--color-text)',
       border: 'var(--color-border)',
       icon: <ShieldCheck size={32} />,
-      pitch: "Secure Your Entity for AI Visibility",
-      description: "Move from a list of links to a definitive answer in Google AI Overviews.",
+      pitch: "One Flexible Retainer, Every Channel",
+      description: "Our Digital Partner Program (DPP): a single monthly retainer covering whichever channels move the needle, including paid ads.",
       features: [
+        "Flexible multi-channel retainer (min. 10 hrs/month)",
+        "Google Ads / Paid Media Management",
+        "Technical SEO Audit & Fixes",
+        "Content Strategy & Creation",
         "Google AI Overviews (AIO) Indexing",
-        "Multi-Modal Alt Tag Optimisation",
-        "Technical Advisory",
-        "Monthly Static Reporting",
-        "AI-Generated Visual Mockups"
+        "Monthly Reporting & Dedicated Account Manager"
       ],
       unavailable: [
         "Generative Engine Optimisation (GEO)",
@@ -119,12 +120,12 @@ const Pricing = () => {
 
       if (forcedTier) {
           rec = forcedTier;
-          if (rec === 'basic') reason = "Since you're looking to fix foundational errors, the Basic tier is the perfect starting point.";
+          if (rec === 'basic') reason = "Since you're looking to fix foundational errors, the Growth tier (our Digital Partner Program) is the perfect starting point.";
           if (rec === 'elite') reason = "For full automation and sales funnel dominance, the Elite tier provides the necessary AI infrastructure.";
       } else {
           if (lowerInput.includes('start') || lowerInput.includes('small') || lowerInput.includes('budget') || lowerInput.includes('fix') || lowerInput.includes('error')) {
             rec = 'basic';
-            reason = "Since you're looking to establish a solid foundation, the Basic tier will secure your entity visibility first.";
+            reason = "Since you're looking to establish a solid foundation, the Growth tier (our Digital Partner Program) gives you a flexible multi-channel retainer to start.";
           } else if (lowerInput.includes('dominate') || lowerInput.includes('large') || lowerInput.includes('custom') || lowerInput.includes('chat') || lowerInput.includes('market leader')) {
             rec = 'elite';
             reason = "For total market dominance and custom AI tools, the Elite tier is the only choice for an autonomous enterprise.";

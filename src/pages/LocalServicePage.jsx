@@ -86,7 +86,7 @@ const LocalServicePage = () => {
                 <ShieldCheck size={24} />
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>The Digital Results Guarantee</h3>
-              <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>We put our money where our mouth is. For our value-based clients in {cityName}, we offer the <strong>Digital Results Guarantee</strong>. We agree on strict KPIs—whether that is lead volume, {serviceName} ROI, or traffic growth. If we don't hit targets, our fees pause.</p>
+              <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>We put our money where our mouth is. For our value-based clients in {cityName}, we offer the <strong>Digital Results Guarantee</strong>. We agree on strict KPIs, whether that is lead volume, {serviceName} ROI, or traffic growth. If we don't hit targets, our fees pause.</p>
             </div>
 
             {/* Feature 2 */}

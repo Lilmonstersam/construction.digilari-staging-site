@@ -2,11 +2,11 @@ export const servicesData = {
   'seo-agency': {
     title: 'Construction SEO Services',
     metaTitle: 'Construction SEO Services | Drive B2B Organic Growth',
-    metaDescription: 'Elevate your construction business with Digilari Construction\'s specialist SEO. We deliver future-proof organic growth through semantic search and technical SEO.',
-    h1: 'Dominate Semantic Search in the Construction Sector',
+    metaDescription: 'Elevate your construction business with Digilari Construction\'s specialist SEO. We deliver lasting organic growth that gets you found by the people who buy what you supply.',
+    h1: 'Get Found First by Buyers in the Construction Sector',
     heroBadge: 'Construction SEO Specialists',
     intro: 'Securing page-one visibility for high-value construction terms is more challenging than ever. With AI Overviews and changing algorithms, outdated local SEO tactics often harm commercial suppliers targeting national or Australasian markets.',
-    intro2: 'At Digilari Construction, we avoid generic keyword stuffing. We build robust, semantic-driven SEO strategies that elevate your topical authority and secure long-term organic traffic from architects, builders, and project managers.',
+    intro2: 'At Digilari Construction, we avoid generic keyword stuffing. We build SEO strategies that make you the obvious authority in your field and bring in steady, long-term traffic from architects, builders, and project managers.',
     pillarsSectionLabel: 'The SEO Challenge',
     pillarsSectionTitle: 'Why Construction Companies Need Specialist SEO',
     pillarsSectionDesc: 'Generic SEO agencies struggle with the unique dynamics of B2B construction marketing. Long sales cycles, technical buyers, and niche terminology demand a specialist approach.',
@@ -15,7 +15,7 @@ export const servicesData = {
       { icon: 'Target', title: 'Topical Authority', desc: 'Search engines reward deep expertise. We build comprehensive topic clusters that position your brand as the definitive authority in your construction niche.', color: 'var(--color-primary)' },
       { icon: 'TrendingUp', title: 'Compound Growth', desc: 'Unlike paid ads, organic traffic compounds over time. A strong SEO foundation delivers qualified leads for years, reducing your cost per acquisition month after month.', color: '#10b981' }
     ],
-    // Solution Showcase — incorporates content from the old "Our Approach" and "Impactful Leads" sections
+    // Solution Showcase, incorporates content from the old "Our Approach" and "Impactful Leads" sections
     solutionLabel: 'Our SEO Platform',
     solutionTitle: 'How We Deliver Construction SEO Services Results',
     solutionTocTitle: 'Our Solution',
@@ -24,7 +24,7 @@ export const servicesData = {
       {
         title: 'Data-Driven Strategy',
         icon: 'BarChart',
-        desc: 'We focus entirely on metrics that impact your bottom line — qualified traffic and high-value project leads. Our approach begins with deep competitive analysis and semantic keyword mapping, ensuring every optimisation targets the technical queries estimators and specifiers actually use to find suppliers.',
+        desc: 'We focus entirely on metrics that impact your bottom line, qualified traffic and high-value project leads. Our approach begins with deep competitor research and careful keyword planning, so every change targets the exact searches estimators and specifiers use to find suppliers.',
         placeholderText: 'Strategy Dashboard Preview'
       },
       {
@@ -34,30 +34,30 @@ export const servicesData = {
         placeholderText: 'Technical Audit Report Preview'
       },
       {
-        title: 'Semantic On-Page Optimisation',
+        title: 'On-Page Optimisation',
         icon: 'BrainCircuit',
-        desc: 'Construction content must be authoritative. We optimise your page structure, implement entity-based keyword strategies, and ensure your content comprehensively answers the technical intent of estimators and specifiers. Whether you supply structural steel or commercial fit-out services, we tailor content to your unique market positioning.',
+        desc: 'Construction content must be authoritative. We optimise your page structure, target the right keywords, and make sure your content fully answers what estimators and specifiers are looking for. Whether you supply structural steel or commercial fit-out services, we tailor content to your unique market positioning.',
         placeholderText: 'Content Optimisation Preview'
       }
     ],
-    // Technology Stack — SEO-specific tools and capabilities
+    // Technology Stack, SEO-specific tools and capabilities
     techTitle: 'Tools & Technology Behind Your Construction SEO Services',
     techDesc: 'Industry-leading SEO tools configured specifically for the commercial construction sector, combined with proprietary frameworks built from over a decade of B2B experience.',
     techTools: [
-      { title: 'Technical SEO Auditing', icon: 'Search', desc: 'Comprehensive site analysis identifying every technical barrier to organic performance — from crawl errors and render-blocking resources to schema gaps and Core Web Vitals.' },
+      { title: 'Technical SEO Auditing', icon: 'Search', desc: 'Comprehensive site analysis identifying every technical barrier to organic performance, from crawl errors and render-blocking resources to schema gaps and Core Web Vitals.' },
       { title: 'Data Analytics & Reporting', icon: 'BarChart', desc: 'Real-time GA4 dashboards tracking the KPIs that matter to construction businesses: qualified traffic, lead volume, pipeline value, and cost per acquisition.' },
       { title: 'Competitive Intelligence', icon: 'Target', desc: 'Deep-dive analysis of your competitors\' content strategies, backlink profiles, and keyword gaps to identify exploitable positioning opportunities in your niche.' },
       { title: 'Content Optimisation', icon: 'BrainCircuit', desc: 'AI-assisted content tools ensuring maximum relevance and topical authority, structured to answer the technical queries your buyers actually ask.' },
-      { title: 'Campaign Automation', icon: 'Settings', desc: 'Automated workflows for content deployment, rank tracking alerts, and performance anomaly detection — so nothing falls through the cracks.' },
+      { title: 'Campaign Automation', icon: 'Settings', desc: 'Automated workflows for content deployment, rank tracking alerts, and performance anomaly detection, so nothing falls through the cracks.' },
       { title: 'Performance Tracking', icon: 'TrendingUp', desc: 'End-to-end attribution from first organic click to signed contract, showing exactly how SEO investment translates into pipeline revenue.' }
     ],
-    // Case Studies — incorporating the old RCR Services case study
+    // Case Studies, incorporating the old RCR Services case study
     caseStudies: [
       { client: 'RCR Services', industry: 'HVAC & Refrigeration', stat: '+150%', metric: 'Organic Sessions', link: '#' },
       { client: 'RCR Services', industry: 'Commercial Contractors', stat: '+306%', metric: 'Goal Completions', link: '#' },
-      { client: 'Placeholder Client', industry: 'Construction Suppliers', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Construction Suppliers', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
-    // Sections array is now empty — all relevant content has been moved into the structured fields above
+    // Sections array is now empty, all relevant content has been moved into the structured fields above
     sections: [],
     differentiators: [
       { icon: 'TrendingUp', title: 'Revenue-Driven SEO', desc: 'We measure success by pipeline value, not keyword rankings. Every optimisation is designed to drive commercial inquiries, and our management fees are tied directly to agreed performance KPIs through our Digital Results Guarantee.', color: 'var(--color-primary)' },
@@ -65,12 +65,12 @@ export const servicesData = {
     ],
     process: [
       { title: 'Discovery & Technical Audit', desc: 'We evaluate your current visibility, site architecture, and competitor landscape to identify high-impact opportunities. From site speed to schema markup, nothing is overlooked.', icon: 'Search' },
-      { title: 'Semantic Strategy Development', desc: 'We map your ideal buyer journey and build a comprehensive keyword and content strategy targeting commercial intent — focusing on the technical queries that drive real project leads.', icon: 'Target' },
-      { title: 'On-Page & Technical Execution', desc: 'Schema markup, site speed, internal linking, entity-based keyword strategies, and authoritative content — all engineered for your construction niche.', icon: 'Settings' },
+      { title: 'Keyword & Content Strategy', desc: 'We map your ideal buyer journey and build a comprehensive keyword and content strategy targeting commercial intent, focusing on the technical queries that drive real project leads.', icon: 'Target' },
+      { title: 'On-Page & Technical Execution', desc: 'Schema markup, site speed, internal linking, the right keywords, and authoritative content, all engineered for your construction niche.', icon: 'Settings' },
       { title: 'Authority Building & Monitoring', desc: 'Ongoing high-authority link building through ethical digital PR, industry citations, content expansion, and performance tracking to ensure sustained organic growth.', icon: 'TrendingUp' }
     ],
     faqs: [
-      { q: 'How long does construction SEO take to show results?', a: 'Most clients see measurable improvements in organic visibility within 3–6 months. Significant lead generation growth typically occurs between months 6–12 as authority compounds.' },
+      { q: 'How long does construction SEO take to show results?', a: 'Most clients see measurable improvements in organic visibility within 3 to 6 months. Significant lead generation growth typically occurs between months 6 to 12 as authority compounds.' },
       { q: 'Do you guarantee page-one rankings?', a: 'We guarantee effort, strategy, and accountability through our DRG model. No ethical SEO provider can guarantee specific rankings, but we tie our fees to agreed performance KPIs.' },
       { q: 'What makes construction SEO different from standard SEO?', a: 'Construction SEO requires deep understanding of technical buyer intent, B2B procurement cycles, and niche terminology. Generic agencies often target B2C terms that waste your budget.' },
       { q: 'Can SEO work alongside our Google Ads campaigns?', a: 'Absolutely. In fact, they complement each other. SEO builds long-term authority while paid media captures immediate demand. We coordinate both for maximum ROI.' }
@@ -108,20 +108,20 @@ export const servicesData = {
       {
         title: 'Frictionless User Experience',
         icon: 'Target',
-        desc: 'Often, a single complicated form field kills a major commercial inquiry. We streamline navigation, improve site speed, and craft clear Calls-To-Action that guide the user effortlessly through their procurement research — converting browsers into active leads.',
+        desc: 'Often, a single complicated form field kills a major commercial inquiry. We streamline navigation, improve site speed, and craft clear Calls-To-Action that guide the user effortlessly through their procurement research, converting browsers into active leads.',
         placeholderText: 'UX Optimisation Preview'
       },
       {
         title: 'Multivariate Testing',
         icon: 'BrainCircuit',
-        desc: 'We create competing versions of your landing pages, varying headlines and intent signals. By running controlled A/B tests, we prove mathematically which version generates more commercial inquiries before deploying it site-wide — no guesswork involved.',
+        desc: 'We create competing versions of your landing pages, varying headlines and intent signals. By running controlled A/B tests, we prove mathematically which version generates more commercial inquiries before deploying it site-wide, no guesswork involved.',
         placeholderText: 'A/B Testing Dashboard Preview'
       }
     ],
     techTitle: 'Tools & Technology Powering Your CRO',
     techDesc: 'Enterprise-grade conversion optimisation tools configured specifically for B2B construction user journeys and long-cycle procurement paths.',
     techTools: [
-      { title: 'Heatmap & Session Recording', icon: 'Search', desc: 'Visual analysis of every user interaction — clicks, scrolls, rage clicks, and dead zones — to identify exactly where leads are lost on your site.' },
+      { title: 'Heatmap & Session Recording', icon: 'Search', desc: 'Visual analysis of every user interaction, clicks, scrolls, rage clicks, and dead zones, to identify exactly where leads are lost on your site.' },
       { title: 'A/B Testing Engine', icon: 'BarChart', desc: 'Statistically rigorous split testing across landing pages, CTAs, and forms to identify the highest-converting variations with confidence.' },
       { title: 'GA4 Custom Funnels', icon: 'TrendingUp', desc: 'Advanced funnel analysis tracking the complete user journey from first visit through to quote request, revealing exactly where drop-offs occur.' },
       { title: 'Form Analytics', icon: 'Target', desc: 'Field-by-field analysis of your contact and specification forms, identifying which questions cause abandonment and how to streamline them.' },
@@ -130,12 +130,12 @@ export const servicesData = {
     ],
     caseStudies: [
       { client: 'Duracube', industry: 'Construction Supply', stat: '+42%', metric: 'Conversion Rate Lift', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [],
     differentiators: [
-      { icon: 'TrendingUp', title: 'Measurable ROI', desc: 'Every test produces quantifiable data. We prove the revenue impact of every change we make to your website — no vague promises, only statistically validated improvements.', color: 'var(--color-primary)' },
+      { icon: 'TrendingUp', title: 'Measurable ROI', desc: 'Every test produces quantifiable data. We prove the revenue impact of every change we make to your website, no vague promises, only statistically validated improvements.', color: 'var(--color-primary)' },
       { icon: 'BrainCircuit', title: 'Construction-Specific Insights', desc: 'We understand how estimators, architects, and project managers browse differently from typical B2C buyers. Our testing hypotheses are grounded in B2B procurement behaviour.', color: 'var(--color-secondary)' }
     ],
     process: [
@@ -145,7 +145,7 @@ export const servicesData = {
       { title: 'Implementation & Scaling', desc: 'Winning variations are deployed site-wide, and we iterate continuously for compounding gains across your entire digital presence.', icon: 'TrendingUp' }
     ],
     faqs: [
-      { q: 'How quickly will we see CRO improvements?', a: 'Initial insights and quick wins can be implemented within 2–4 weeks. Statistically significant A/B test results typically take 4–8 weeks depending on traffic volume.' },
+      { q: 'How quickly will we see CRO improvements?', a: 'Initial insights and quick wins can be implemented within 2 to 4 weeks. Statistically significant A/B test results typically take 4 to 8 weeks depending on traffic volume.' },
       { q: 'Do we need high traffic for CRO to work?', a: 'CRO is most effective with moderate to high traffic. Even with lower volumes, we can identify and fix major conversion blockers through qualitative analysis like heatmaps and session recordings.' },
       { q: 'Will CRO changes affect our SEO?', a: 'We ensure all CRO changes maintain or improve SEO performance. In many cases, better user experience signals actually boost organic rankings.' }
     ],
@@ -171,7 +171,7 @@ export const servicesData = {
     solutionLabel: 'The AI Edge',
     solutionTitle: 'The AI Edge in B2B Construction Paid Media',
     solutionTocTitle: 'Our Solution',
-    solutionDesc: 'Google Ads leans heavily on machine learning, but without expert human guidance, algorithms spend inefficiently on irrelevant B2C traffic. We actively steer Google\'s AI by feeding it high-value, intent-driven conversion data, ensuring your budget only targets prospects ready to procure commercial services. Our management is backed by the Digital Results Guarantee — if we do not meet agreed lead volume KPIs, our management fees pause.',
+    solutionDesc: 'Google Ads leans heavily on machine learning, but without expert human guidance, algorithms spend inefficiently on irrelevant B2C traffic. We actively steer Google\'s AI by feeding it high-value, intent-driven conversion data, ensuring your budget only targets prospects ready to procure commercial services. Our management is backed by the Digital Results Guarantee, if we do not meet agreed lead volume KPIs, our management fees pause.',
     solutionTabs: [
       {
         title: 'Intent-Driven Keywords',
@@ -182,7 +182,7 @@ export const servicesData = {
       {
         title: 'High-Converting Destinations',
         icon: 'Target',
-        desc: 'Paid clicks mean nothing without a strong destination. We utilize Conversion Rate Optimisation on every campaign, designing frictionless landing pages that convert estimators and project managers into active inquiries — not just clicks.',
+        desc: 'Paid clicks mean nothing without a strong destination. We utilize Conversion Rate Optimisation on every campaign, designing frictionless landing pages that convert estimators and project managers into active inquiries, not just clicks.',
         placeholderText: 'Landing Page Preview'
       },
       {
@@ -195,22 +195,22 @@ export const servicesData = {
     techTitle: 'Tools & Technology Behind Your Paid Media',
     techDesc: 'Advanced advertising platforms and analytics tools configured for maximum B2B construction performance and transparent spend accountability.',
     techTools: [
-      { title: 'Google Ads Management', icon: 'Search', desc: 'Full-stack campaign management across Search, Display, and Performance Max — with construction-specific negative keyword lists and audience exclusions built in.' },
+      { title: 'Google Ads Management', icon: 'Search', desc: 'Full-stack campaign management across Search, Display, and Performance Max, with construction-specific negative keyword lists and audience exclusions built in.' },
       { title: 'LinkedIn Ads', icon: 'Users', desc: 'Precision targeting of construction decision-makers by job title, company size, and industry vertical. Ideal for reaching estimators and project directors directly.' },
       { title: 'Conversion Tracking', icon: 'TrendingUp', desc: 'Enhanced offline conversion tracking and CRM integration, connecting ad clicks to actual signed contracts and pipeline revenue.' },
       { title: 'Click Fraud Protection', icon: 'Shield', desc: 'Active monitoring for invalid clicks and competitor sabotage, protecting every dollar of your advertising investment.' },
       { title: 'Landing Page Optimisation', icon: 'Target', desc: 'Rapid A/B testing and conversion-focused design for construction-specific landing pages that maximise Quality Scores and lead volume.' },
-      { title: 'Performance Dashboards', icon: 'BarChart', desc: 'Real-time dashboards showing qualified leads, cost per acquisition, ROAS, and pipeline value — updated weekly with transparent reporting.' }
+      { title: 'Performance Dashboards', icon: 'BarChart', desc: 'Real-time dashboards showing qualified leads, cost per acquisition, ROAS, and pipeline value, updated weekly with transparent reporting.' }
     ],
     caseStudies: [
       { client: 'RCR Services', industry: 'HVAC & Refrigeration', stat: '3x', metric: 'Lead Volume', link: '#' },
-      { client: 'Placeholder Client', industry: 'Steel Fabrication', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Steel Fabrication', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [],
     differentiators: [
       { icon: 'Shield', title: 'Budget Protection', desc: 'We actively monitor for click fraud, exclude irrelevant audiences, and implement comprehensive negative keyword lists to protect every dollar of your ad spend.', color: 'var(--color-primary)' },
-      { icon: 'TrendingUp', title: 'Revenue Attribution', desc: 'We track leads from click to contract, giving you clear visibility on exactly which campaigns drive signed deals — not just clicks and impressions.', color: 'var(--color-secondary)' }
+      { icon: 'TrendingUp', title: 'Revenue Attribution', desc: 'We track leads from click to contract, giving you clear visibility on exactly which campaigns drive signed deals, not just clicks and impressions.', color: 'var(--color-secondary)' }
     ],
     process: [
       { title: 'Campaign Audit & Strategy', desc: 'We evaluate existing campaigns, identify waste, and build a B2B-focused strategy targeting commercial decision-makers with precision.', icon: 'Search' },
@@ -219,10 +219,10 @@ export const servicesData = {
       { title: 'Performance Reporting', desc: 'Transparent weekly and monthly reporting showing real metrics: qualified leads, cost per acquisition, and pipeline value.', icon: 'BarChart' }
     ],
     faqs: [
-      { q: 'What is a typical Google Ads budget for construction?', a: 'Budgets vary by market and competition. Most of our construction clients invest between $3,000–$15,000/month in ad spend, with management fees separate. We help determine the optimal budget during your strategy session.' },
-      { q: 'How do you prevent wasting budget on residential leads?', a: 'We implement comprehensive negative keyword lists, use audience exclusions, and write ad copy that specifically qualifies commercial intent. This typically reduces waste by 40–60%.' },
+      { q: 'What is a typical Google Ads budget for construction?', a: 'Budgets vary by market and competition. Most of our construction clients invest between $3,000 to $15,000/month in ad spend, with management fees separate. We help determine the optimal budget during your strategy session.' },
+      { q: 'How do you prevent wasting budget on residential leads?', a: 'We implement comprehensive negative keyword lists, use audience exclusions, and write ad copy that specifically qualifies commercial intent. This typically reduces waste by 40 to 60%.' },
       { q: 'Can you manage LinkedIn Ads alongside Google Ads?', a: 'Absolutely. LinkedIn is essential for reaching construction decision-makers. We coordinate both platforms for a unified B2B lead generation strategy.' },
-      { q: 'How quickly can Google Ads generate leads?', a: 'Google Ads can generate qualified leads within days of launch. However, optimal performance typically requires 4–6 weeks of data collection and optimisation.' }
+      { q: 'How quickly can Google Ads generate leads?', a: 'Google Ads can generate qualified leads within days of launch. However, optimal performance typically requires 4 to 6 weeks of data collection and optimisation.' }
     ],
     cta: 'Claim Your Free Construction Google Ads Audit'
   },
@@ -237,7 +237,7 @@ export const servicesData = {
     sections: [
       {
         tocTitle: 'Content Strategy',
-        title: 'Content Marketing That Feeds Semantic Search',
+        title: 'Content Marketing That Gets You Found',
         content: 'We have evolved our inbound strategies to capitalise on Generative Engine Optimisation (GEO) and Answer Engine Optimisation (AEO) for B2B audiences.',
         subsections: [
           { title: 'Attract Through Technical Authority', content: 'We map out the exact technical questions your ideal clients are asking. By creating structured, in-depth content that addresses these queries, we ensure search engines and AI models confidently cite you as the authoritative supplier in your niche.' },
@@ -270,7 +270,7 @@ export const servicesData = {
     solutionLabel: 'Beyond Traditional Search',
     solutionTitle: 'How We Optimise Your Brand for Answer Engines',
     solutionTocTitle: 'Our Solution',
-    solutionDesc: 'AEO focuses on structuring your content to directly and concisely answer user queries, making it the perfect source for AI overviews and voice search. We implement schema markup, FAQ structures, and entity-based content that AI engines can easily parse and cite.',
+    solutionDesc: 'AEO focuses on structuring your content to directly and concisely answer user queries, making it the perfect source for AI overviews and voice search. We implement schema markup, FAQ structures, and clearly structured content that AI engines can easily read and cite.',
     solutionTabs: [
       {
         title: 'Entity-Based Content',
@@ -297,28 +297,28 @@ export const servicesData = {
       { title: 'AI Citation Tracking', icon: 'Search', desc: 'Proprietary monitoring across ChatGPT, Perplexity, Google AI Overviews, and Claude to track how often and how accurately your brand is cited.' },
       { title: 'Schema Markup Engine', icon: 'Settings', desc: 'Automated deployment of FAQ, ProfessionalService, Product, and Organisation schema to maximise structured data coverage.' },
       { title: 'Entity Recognition Analysis', icon: 'BrainCircuit', desc: 'Analysis of how AI models recognise your brand, products, and key personnel as entities within their knowledge graphs.' },
-      { title: 'Voice Search Optimisation', icon: 'Globe', desc: 'Content formatting optimised for voice queries from Siri, Alexa, and Google Assistant — capturing the growing voice search market.' },
+      { title: 'Voice Search Optimisation', icon: 'Globe', desc: 'Content formatting optimised for voice queries from Siri, Alexa, and Google Assistant, capturing the growing voice search market.' },
       { title: 'Content Structuring Tools', icon: 'Target', desc: 'AI-assisted content formatting ensuring your pages are structured in the question-answer patterns that answer engines prefer to cite.' },
       { title: 'Competitive Benchmarking', icon: 'BarChart', desc: 'Real-time comparison of your AI citation frequency against competitors, identifying opportunities to capture market share in AI responses.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Structural Steel', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Building Supply', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Structural Steel', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Building Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [],
     differentiators: [
-      { icon: 'BrainCircuit', title: 'AI-Native Strategy', desc: 'We do not retrofit SEO tactics for AI. Our AEO strategies are built from the ground up for how large language models process and cite construction content — not generic advice repurposed.', color: 'var(--color-secondary)' },
-      { icon: 'TrendingUp', title: 'Measurable AI Citations', desc: 'We track your brand\'s presence across AI platforms, providing concrete data on citation frequency and competitive positioning — not just vanity metrics.', color: 'var(--color-primary)' }
+      { icon: 'BrainCircuit', title: 'AI-Native Strategy', desc: 'We do not retrofit SEO tactics for AI. Our AEO strategies are built from the ground up for how large language models process and cite construction content, not generic advice repurposed.', color: 'var(--color-secondary)' },
+      { icon: 'TrendingUp', title: 'Measurable AI Citations', desc: 'We track your brand\'s presence across AI platforms, providing concrete data on citation frequency and competitive positioning, not just vanity metrics.', color: 'var(--color-primary)' }
     ],
     process: [
       { title: 'AI Visibility Audit', desc: 'We test how AI engines currently reference your brand and identify gaps in your structured content that prevent citation.', icon: 'Search' },
-      { title: 'Content Restructuring', desc: 'We reformat and expand your technical content to match how AI engines parse and cite authoritative sources — maximising your citation potential.', icon: 'Settings' },
+      { title: 'Content Restructuring', desc: 'We reformat and expand your technical content to match how AI engines parse and cite authoritative sources, maximising your citation potential.', icon: 'Settings' },
       { title: 'Schema & Entity Mapping', desc: 'We implement comprehensive structured data and build entity relationships that AI models can follow to reference your brand accurately.', icon: 'BrainCircuit' },
       { title: 'Ongoing Citation Optimisation', desc: 'We monitor AI citations and continuously refine content to maintain and improve your visibility across every major AI platform.', icon: 'TrendingUp' }
     ],
     faqs: [
-      { q: 'What is the difference between AEO and SEO?', a: 'SEO focuses on ranking in traditional search results. AEO focuses on being cited by AI engines like ChatGPT and Google AI Overviews. Both are important — AEO is the next evolution.' },
+      { q: 'What is the difference between AEO and SEO?', a: 'SEO focuses on ranking in traditional search results. AEO focuses on being cited by AI engines like ChatGPT and Google AI Overviews. Both are important, AEO is the next evolution.' },
       { q: 'Which AI platforms does AEO target?', a: 'We optimise for Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini, and voice assistants like Siri and Alexa.' },
       { q: 'Does AEO replace our existing SEO?', a: 'No. AEO builds on your existing SEO foundation. Well-optimised SEO content is actually easier to adapt for answer engines.' }
     ],
@@ -381,7 +381,7 @@ export const servicesData = {
     techTitle: 'Tools & Technology Behind Your GEO Strategy',
     techDesc: 'Advanced AI monitoring and content engineering tools designed to maximise your brand\'s presence across the generative search landscape.',
     techTools: [
-      { title: 'LLM Citation Monitoring', icon: 'Search', desc: 'Real-time tracking of your brand mentions across ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini — with competitive benchmarking.' },
+      { title: 'LLM Citation Monitoring', icon: 'Search', desc: 'Real-time tracking of your brand mentions across ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini, with competitive benchmarking.' },
       { title: 'Knowledge Graph Analysis', icon: 'Globe', desc: 'Deep analysis of how your brand is represented in AI knowledge bases, identifying gaps and opportunities for entity recognition improvement.' },
       { title: 'Content Depth Scoring', icon: 'BarChart', desc: 'Proprietary scoring system measuring comprehensiveness and authority of your topic coverage against the threshold AI models require for citation.' },
       { title: 'Entity Mapping Tools', icon: 'BrainCircuit', desc: 'Visual mapping of entity relationships between your brand, products, services, and industry concepts to strengthen AI model associations.' },
@@ -389,18 +389,18 @@ export const servicesData = {
       { title: 'Competitive AI Intelligence', icon: 'Target', desc: 'Analysis of which competitors are being cited by AI tools for your target queries, and strategic recommendations to displace them.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Construction Supply', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Steel Fabrication', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Construction Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Steel Fabrication', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [],
     differentiators: [
-      { icon: 'Globe', title: 'Multi-Platform Visibility', desc: 'We do not just optimise for Google. We ensure your brand is cited across every major AI platform where your buyers are researching — including emerging tools most agencies ignore.', color: 'var(--color-primary)' },
+      { icon: 'Globe', title: 'Multi-Platform Visibility', desc: 'We do not just optimise for Google. We ensure your brand is cited across every major AI platform where your buyers are researching, including emerging tools most agencies ignore.', color: 'var(--color-primary)' },
       { icon: 'BrainCircuit', title: 'Continuous Learning', desc: 'As AI models evolve, so do our strategies. We stay ahead of algorithm changes and new model releases so your visibility never drops.', color: 'var(--color-secondary)' }
     ],
     process: [
       { title: 'GEO Audit & Baseline', desc: 'We assess your current presence in AI-generated responses and identify content gaps that prevent your brand from being cited.', icon: 'Search' },
-      { title: 'Content Architecture', desc: 'We restructure your site\'s content into comprehensive topic clusters that LLMs prefer to reference — building genuine topical authority.', icon: 'Settings' },
+      { title: 'Content Architecture', desc: 'We restructure your site\'s content into comprehensive topic clusters that LLMs prefer to reference, building genuine topical authority.', icon: 'Settings' },
       { title: 'Entity & Schema Optimisation', desc: 'We implement advanced structured data and build your brand\'s entity profile across knowledge sources used by generative engines.', icon: 'BrainCircuit' },
       { title: 'Citation Tracking & Iteration', desc: 'We monitor your AI citations across all major platforms and continuously refine strategies for growing visibility.', icon: 'TrendingUp' }
     ],
@@ -444,7 +444,7 @@ export const servicesData = {
     metaDescription: 'Expert B2B social media marketing for commercial construction suppliers. Build authority across LinkedIn, Facebook, Instagram, X, and TikTok.',
     h1: 'Social Media That Builds Industry Authority',
     intro: "Social media in construction isn't about going viral; it's about industry presence and reaching the right decision-makers across all platforms.",
-    intro2: 'We utilize a multi-channel approach—including LinkedIn, Facebook, Instagram, X, and TikTok—to position your key personnel as thought leaders and put your brand directly in front of project decision-makers where they consume content.',
+    intro2: 'We use a multi-channel approach (including LinkedIn, Facebook, Instagram, X, and TikTok) to position your key personnel as thought leaders and put your brand directly in front of project decision-makers where they consume content.',
     sections: [
       { tocTitle: 'Platform Strategy', title: 'Platform-Specific B2B Strategies', content: 'We craft targeted outreach, engaging visual content, and technical leadership strategies tailored to the unique dynamics of each social platform, bypassing gatekeepers to connect directly with commercial estimators and architects.' }
     ],
@@ -458,7 +458,7 @@ export const servicesData = {
     h1: 'Winning in a Zero-Click World',
     heroBadge: 'Zero Click Strategy',
     intro: "Users don't always need to click your website to see your brand. Often, the answer is right there on the search results page.",
-    intro2: 'We optimise your digital profile—from Google Business Profiles to Featured Snippets—so you capture attention and convey authority without relying on a site visit.',
+    intro2: 'We optimise your digital profile, from Google Business Profiles to Featured Snippets, so you capture attention and convey authority without relying on a site visit.',
     pillarsSectionLabel: 'The Click-Free Reality',
     pillarsSectionTitle: 'Why Zero-Click Search Matters for Construction',
     pillarsSectionDesc: 'Over 60% of Google searches now result in zero clicks. Your brand needs to win in this new reality.',
@@ -470,7 +470,7 @@ export const servicesData = {
     solutionLabel: 'Position Zero Strategy',
     solutionTitle: 'Dominating the Search Results Page',
     solutionTocTitle: 'Our Solution',
-    solutionDesc: 'By formatting your technical content correctly, we aim to secure the highly visible "Position Zero" snippets and SERP features, making you the undisputed authority for construction queries — even before users click through to any website.',
+    solutionDesc: 'By formatting your technical content correctly, we aim to secure the highly visible "Position Zero" snippets and SERP features, making you the undisputed authority for construction queries, even before users click through to any website.',
     solutionTabs: [
       {
         title: 'Structured Content Formatting',
@@ -492,7 +492,7 @@ export const servicesData = {
       }
     ],
     techTitle: 'Tools & Technology Behind Your Zero-Click Strategy',
-    techDesc: 'SERP analysis and structured data tools designed to maximise your brand\'s presence across the search results page — before users ever click.',
+    techDesc: 'SERP analysis and structured data tools designed to maximise your brand\'s presence across the search results page, before users ever click.',
     techTools: [
       { title: 'SERP Feature Tracking', icon: 'Search', desc: 'Real-time monitoring of featured snippets, Knowledge Panels, People Also Ask, and rich results for your target construction queries.' },
       { title: 'GBP Management Suite', icon: 'Globe', desc: 'Comprehensive Google Business Profile optimisation including posts, photos, Q&A management, review responses, and performance analytics.' },
@@ -502,20 +502,20 @@ export const servicesData = {
       { title: 'Review & Reputation Tools', icon: 'Shield', desc: 'Automated review solicitation and reputation management to strengthen Knowledge Panel signals and local trust signals.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Construction Supply', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Construction Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'HVAC Contractors', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [],
     differentiators: [
-      { icon: 'TrendingUp', title: 'SERP Real Estate', desc: 'We maximise your presence across the search results page so your brand is visible in every possible format and position — snippets, panels, rich results, and local packs.', color: 'var(--color-primary)' },
+      { icon: 'TrendingUp', title: 'SERP Real Estate', desc: 'We maximise your presence across the search results page so your brand is visible in every possible format and position, snippets, panels, rich results, and local packs.', color: 'var(--color-primary)' },
       { icon: 'Shield', title: 'Brand Protection', desc: 'Zero-click optimisation also protects your brand from competitors who might otherwise dominate the search results page ahead of you with their own snippets and panels.', color: 'var(--color-secondary)' }
     ],
     process: [
       { title: 'SERP Feature Audit', desc: 'We analyse current SERP features for your target queries and identify winnable zero-click opportunities that competitors have not yet captured.', icon: 'Search' },
-      { title: 'Content Restructuring', desc: 'We reformat existing content to match the structures Google uses for featured snippets and rich results — including tables, lists, and Q&A formats.', icon: 'Settings' },
+      { title: 'Content Restructuring', desc: 'We reformat existing content to match the structures Google uses for featured snippets and rich results, including tables, lists, and Q&A formats.', icon: 'Settings' },
       { title: 'GBP & Schema Optimisation', desc: 'We optimise your Google Business Profile and implement rich result schema across your site to maximise SERP real estate.', icon: 'Globe' },
-      { title: 'Monitoring & Iteration', desc: 'We track featured snippet wins, rich result eligibility, and competitor movements — continuously optimising to maintain your zero-click dominance.', icon: 'TrendingUp' }
+      { title: 'Monitoring & Iteration', desc: 'We track featured snippet wins, rich result eligibility, and competitor movements, continuously optimising to maintain your zero-click dominance.', icon: 'TrendingUp' }
     ],
     faqs: [
       { q: 'What is a zero-click search?', a: 'A zero-click search occurs when a user gets their answer directly from the search results page without clicking through to any website. Featured snippets, knowledge panels, and People Also Ask boxes are common examples.' },

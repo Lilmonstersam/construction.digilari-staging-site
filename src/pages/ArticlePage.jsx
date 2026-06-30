@@ -61,7 +61,7 @@ const ArticlePage = () => {
         return (
           <blockquote key={idx} style={{ borderLeft: '3px solid var(--color-primary)', padding: '0.5rem 0 0.5rem 1.5rem', margin: '0 0 1.5rem 0', fontStyle: 'italic', color: 'var(--color-text)', fontSize: '1.1rem', lineHeight: 1.6 }}>
             {block.text}
-            {block.cite && <footer style={{ marginTop: '0.75rem', fontStyle: 'normal', fontSize: '0.8rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>— {block.cite}</footer>}
+            {block.cite && <footer style={{ marginTop: '0.75rem', fontStyle: 'normal', fontSize: '0.8rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>– {block.cite}</footer>}
           </blockquote>
         );
       case 'callout':

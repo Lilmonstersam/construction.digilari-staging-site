@@ -104,6 +104,71 @@ export const teamData = {
     }
   },
 
+  'bridie-conroy': {
+    name: 'Bridie Conroy',
+    homeName: 'Bridie Conroy',
+    role: 'Account Manager',
+    img: 'Account Manager - Bridie Conroy.jpeg',
+    metaTitle: 'Bridie Conroy – Account Manager | Digilari Construction',
+    metaDescription: 'Meet Bridie Conroy, Account Manager at Digilari, keeping construction clients aligned, informed, and on track toward their growth goals.',
+    bio: [
+      'Bridie Conroy is an Account Manager at Digilari, the connective tissue between our clients and the specialists delivering their campaigns. She keeps projects aligned, communication clear, and momentum high across every engagement.',
+      'Full profile coming soon.'
+    ],
+    expertise: [
+      { title: 'Account Management', desc: 'Owning the client relationship end to end, from onboarding through to ongoing growth.' },
+      { title: 'Project Coordination', desc: 'Keeping strategy, creative, and delivery teams aligned and on schedule.' },
+      { title: 'Client Communication', desc: 'Clear, proactive reporting so clients always know where things stand.' }
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/in/bridie-conroy-0999bb122/',
+      email: 'marketing@digilari.com.au'
+    }
+  },
+
+  'kane-estonina': {
+    name: 'Kane Estonina',
+    homeName: 'Kane Estonina',
+    role: 'Web Developer',
+    img: 'Web Developer - Kane Estonina.svg',
+    metaTitle: 'Kane Estonina – Web Developer | Digilari Construction',
+    metaDescription: 'Meet Kane Estonina, Web Developer at Digilari, building high-performing, conversion-focused websites for construction clients.',
+    bio: [
+      'Kane Estonina is a Web Developer at Digilari, building fast, reliable, conversion-focused websites that turn traffic into qualified leads for our construction clients.',
+      'Full profile coming soon.'
+    ],
+    expertise: [
+      { title: 'Web Development', desc: 'Building high-performing, responsive websites with clean, maintainable code.' },
+      { title: 'Performance Optimisation', desc: 'Tuning site speed and Core Web Vitals for both users and search engines.' }
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/in/kane-estonina/',
+      email: 'marketing@digilari.com.au'
+    }
+  },
+
+  'marcela-vildoza': {
+    name: 'Marcela Vildoza',
+    homeName: 'Marcela Vildoza',
+    role: 'Paid Media Specialist',
+    img: 'Paid Media Specialist - Marcela Vildoza.jpeg',
+    metaTitle: 'Marcela Vildoza – Paid Media Specialist | Digilari Construction',
+    metaDescription: 'Meet Marcela Vildoza, Paid Media Specialist at Digilari, running high-intent Google and paid social campaigns for construction clients.',
+    bio: [
+      'Marcela Vildoza is a Paid Media Specialist at Digilari, planning and managing high-intent paid campaigns across Google, Meta, and LinkedIn that put construction brands in front of ready-to-buy decision-makers.',
+      'Full profile coming soon.'
+    ],
+    expertise: [
+      { title: 'Google Ads Management', desc: 'Search, Display, and Performance Max campaigns built around commercial intent.' },
+      { title: 'Paid Social', desc: 'Targeted Meta and LinkedIn campaigns that reach the right buying committees.' },
+      { title: 'Performance & ROAS', desc: 'Optimising spend against qualified leads and return on ad spend, not vanity clicks.' }
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/in/marcelavildozamarketing/',
+      email: 'marketing@digilari.com.au'
+    }
+  },
+
   'dorisa-ramos': {
     name: 'Dorisa Ramos',
     homeName: 'Dorisa Ramos',

@@ -9,17 +9,17 @@ export const pagesData = {
       {
         tocTitle: 'Marketing Costs',
         title: 'How much does digital marketing typically cost?',
-        content: 'Digital marketing costs vary widely depending on scope, expertise, and engagement model. At Digilari, we offer three clear, customisable options—ranging from one-off projects through to fully managed, value-based retainers—so you only pay for what you need. In contrast, B2B companies typically allocate 2–5 % of revenue to marketing, while B2C businesses often spend 5–10 %.'
+        content: 'Digital marketing costs vary widely depending on scope, expertise, and engagement model. At Digilari, we offer three clear, customisable options, ranging from one-off projects through to fully managed, value-based retainers, so you only pay for what you need. In contrast, B2B companies typically allocate 2 to 5% of revenue to marketing, while B2C businesses often spend 5 to 10%.'
       },
       {
         tocTitle: 'Timeframe for Results',
         title: 'When can I expect results from Digital Marketing efforts?',
-        content: 'Outcomes vary by tactic and objectives. Quick wins—such as conversion-rate tweaks or paid-search hygiene—often deliver uplift within 30 days. Sustainable channels like SEO, account-based marketing (ABM) and marketing automation typically gain momentum around the 90-day mark, then compound over time. At Digilari, we’ll send you monthly performance reports that highlight key metrics, track those quick wins, and ensure all activity remains aligned with your quarterly business goals.'
+        content: 'Outcomes vary by tactic and objectives. Quick wins, such as conversion-rate tweaks or paid-search improvements, often deliver uplift within 30 days. Sustainable channels like SEO, account-based marketing (ABM) and marketing automation typically gain momentum around the 90-day mark, then compound over time. At Digilari, we’ll send you monthly performance reports that highlight key metrics, track those quick wins, and ensure all activity remains aligned with your quarterly business goals.'
       },
       {
         tocTitle: 'Hidden Fees',
         title: 'Are there hidden fees in digital marketing contracts?',
-        content: 'Digilari offers clear, tiered pricing to suit a variety of needs and budgets, with no hidden fees. Our three main options include an A-La-Carte Menu starting at $1,980 plus an onboarding setup fee, a Digital Partner Program (DPP) with a fixed monthly retainer of $1,800 – $4,900+ GST per month (minimum 10 hours/month), and a Value-Based Account Management Program from $4,900+ GST per month with a Digital Results Guarantee on agreed KPIs.'
+        content: 'Digilari offers clear, tiered pricing to suit a variety of needs and budgets, with no hidden fees. Our three main options include an à la carte menu starting at $1,980 plus an onboarding setup fee, a Digital Partner Program (DPP) with a fixed monthly retainer of $1,800 to $4,900+ GST per month (minimum 10 hours/month), and a Value-Based Account Management Program from $4,900+ GST per month with a Digital Results Guarantee on agreed KPIs.'
       },
       {
         tocTitle: 'Customised Industry Solutions',
@@ -44,12 +44,12 @@ export const pagesData = {
       {
         tocTitle: 'Proof of Success',
         title: 'Can you show proof this works for businesses like mine?',
-        content: 'Yes—case studies are public-ready once clients sign them off. Examples include: +233 % qualified-lead growth for a national fit-out firm and 4.6× ROAS on LinkedIn for a healthcare supplier. We walk you through the raw dashboards, not cherry-picked slides.'
+        content: 'Yes. Case studies are public-ready once clients sign them off. Examples include +233% qualified-lead growth for a national fit-out firm and 4.6x ROAS on LinkedIn for a healthcare supplier. We walk you through the raw dashboards, not cherry-picked slides.'
       },
       {
         tocTitle: 'SEO vs PPC',
         title: 'What\'s the difference between SEO and PPC, and which digital marketing channel will get me the best results?',
-        content: 'SEO (including Generative Engine Optimisation) boosts your site’s organic and AI-driven visibility, delivering credible, high-intent leads over the long term—though it demands ongoing effort and patience. PPC (Pay-Per-Click) ads, by contrast, secure immediate placement at the top of search results for targeted keywords, but traffic halts as soon as the budget is exhausted. At Digilari, we tailor this mix to exactly where your buyers research and shortlist, combining sustainable SEO growth, instant PPC traction, and strategic account-level engagement.'
+        content: 'SEO (including Generative Engine Optimisation) boosts your site’s organic and AI-driven visibility, delivering credible, high-intent leads over the long term, though it demands ongoing effort and patience. PPC (Pay-Per-Click) ads, by contrast, secure immediate placement at the top of search results for targeted keywords, but traffic halts as soon as the budget is exhausted. At Digilari, we tailor this mix to exactly where your buyers research and shortlist, combining sustainable SEO growth, instant PPC traction, and strategic account-level engagement.'
       },
       {
         tocTitle: 'Agency vs In-House',
@@ -59,12 +59,12 @@ export const pagesData = {
       {
         tocTitle: 'Leveraging AI',
         title: 'How do you leverage AI without sacrificing quality?',
-        content: 'AI handles grunt tasks—keyword clustering, draft ad variants, predictive bidding—while humans own strategy, creative and QA. Every AI output faces a two-step human check, keeping campaigns sharp and on-brand.'
+        content: 'AI handles the repetitive groundwork (keyword clustering, draft ad variants, predictive bidding) while our people own strategy, creative and QA. Every AI output faces a two-step human check, keeping campaigns sharp and on-brand.'
       },
       {
         tocTitle: 'Comparing Digilari',
         title: 'How does Digilari compare to other agencies or hiring a freelancer?',
-        content: 'We don\'t claim to speak for every agency, but here\'s what sets Digilari apart: many network firms bolt SMB projects onto junior teams, and freelancers simply can\'t deliver end-to-end strategy. By contrast, our 20-strong specialist crew brings strategy, creative, GEO-SEO, paid media, automation and data together under one roof—led personally by senior talent with no silos or hand-offs. As a value-based agency, we only partner with clients who share our commitment to transparency and results.'
+        content: 'We don\'t claim to speak for every agency, but here\'s what sets Digilari apart: many network firms bolt SMB projects onto junior teams, and freelancers simply can\'t deliver end-to-end strategy. By contrast, our 20-strong specialist crew brings strategy, creative, GEO-SEO, paid media, automation and data together under one roof, led personally by senior talent with no silos or hand-offs. As a value-based agency, we only partner with clients who share our commitment to transparency and results.'
       },
       {
         tocTitle: 'Red Flags',
@@ -83,7 +83,7 @@ export const pagesData = {
       },
       {
         tocTitle: 'CRM Integration',
-        title: 'We already use HubSpot/Zoho—can you slot into our stack?',
+        title: 'We already use HubSpot/Zoho, can you slot into our stack?',
         content: 'Absolutely. We’re platform-agnostic but logic-driven. Whether you need us to build custom landing pages in HubSpot, set up lead-scoring workflows in Zoho, or simply ensure your Google Ads data flows correctly into your CRM, we work with your current tech stack. Our goal is to ensure seamless execution, no matter your setup.'
       }
     ]
@@ -116,7 +116,7 @@ export const pagesData = {
       {
         tocTitle: 'Specialised Expertise',
         title: 'Specialised Expertise',
-        content: 'We don\'t do e-commerce. We don\'t do local cafes. We only do commercial construction. We understand your sales cycles, your profit margins, and how to speak to architects and project managers.'
+        content: 'We don\'t do B2C ecommerce. We don\'t do local cafes. We focus on commercial construction. We understand your sales cycles, your profit margins, and how to speak to architects and project managers.'
       },
       {
         tocTitle: 'Total Accountability',
@@ -206,12 +206,12 @@ export const pagesData = {
     title: 'Our Process',
     metaTitle: 'Our Process | Digilari Digital Partner Program',
     metaDescription: 'Learn how Digilari Construction builds your digital marketing engine from the ground up and transitions into a long-term, embedded partnership.',
-    h1: 'Our Process — The Digilari Digital Partner Program',
+    h1: 'Our Process: The Digilari Digital Partner Program',
     intro: 'We do the heavy lifting first. Building your digital acquisition engine is phase one. Running it at scale is phase two.',
     sections: [
       {
         tocTitle: 'Phase 1: Foundations',
-        title: 'Phase 1 — Foundations & Ramp (Months 1-6)',
+        title: 'Phase 1: Foundations & Ramp (Months 1-6)',
         content: 'The first 6 months is an intensive setup and ramp period where Digilari builds your complete digital marketing engine from the ground up. This phase is priced at a full-service management retainer reflecting the volume of setup work involved.',
         subsections: [
           {
@@ -234,12 +234,12 @@ export const pagesData = {
       },
       {
         tocTitle: 'Phase 2: Partner',
-        title: 'Phase 2 — The Partner Phase (Month 7+)',
-        content: 'Once the engine is running, we shift to true partnership. From Month 7, Digilari transitions to a reduced monthly management fee structure. We act as a genuine embedded marketing partner — not a vendor — with a shared focus on continuous improvement, lead quality, and commercial outcomes.',
+        title: 'Phase 2: The Partner Phase (Month 7+)',
+        content: 'Once the engine is running, we shift to true partnership. From Month 7, Digilari transitions to a reduced monthly management fee structure. We act as a genuine embedded marketing partner, not a vendor, with a shared focus on continuous improvement, lead quality, and commercial outcomes.',
         subsections: [
           {
             title: 'Compounding Results',
-            content: 'The hard work in Phase 1 means Phase 2 compounds — results keep improving without starting from scratch.'
+            content: 'The hard work in Phase 1 means Phase 2 compounds: results keep improving without starting from scratch.'
           },
           {
             title: 'Performance-Based',
@@ -247,11 +247,11 @@ export const pagesData = {
           },
           {
             title: 'Senior Strategy',
-            content: 'Senior strategy on every account — no juniors managing your budget.'
+            content: 'Senior strategy on every account, with no juniors managing your budget.'
           },
           {
             title: 'Mutual Growth',
-            content: 'We grow when you grow — that\'s what a real marketing partner looks like.'
+            content: 'We grow when you grow. That\'s what a real marketing partner looks like.'
           }
         ]
       }

@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle2, TrendingUp, Target, Users, Search, Zap, BarChart, Mail, BrainCircuit, Globe, ChevronLeft, ChevronRight, Star, Shield, Award } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
+import StickyCTA from '../components/StickyCTA';
 
 const methodologyTiles = [
-  { title: "Construction SEO", desc: "Dominate semantic search with future-proof SEO strategies built for the construction sector.", icon: Search, link: "/services/seo-agency", color: "var(--color-primary)" },
+  { title: "Construction SEO", desc: "Get found first on Google when builders, estimators, and project managers search for what you supply.", icon: Search, link: "/services/seo-agency", color: "var(--color-primary)" },
   { title: "Google Ads Management", desc: "Hyper-targeted paid media that maximises ROAS and eliminates B2C wastage.", icon: Target, link: "/services/ppc-agency", color: "var(--color-secondary)" },
   { title: "Conversion Optimisation", desc: "Turn existing traffic into high-value project leads through data-driven testing.", icon: TrendingUp, link: "/services/conversion-rate-optimisation", color: "#10b981" },
   { title: "Technical Content Marketing", desc: "Inbound marketing engineered for the construction procurement cycle.", icon: BarChart, link: "/services/inbound-and-content-marketing", color: "var(--color-primary)" },
@@ -99,7 +100,7 @@ const Home = () => {
                   </div>
                 ))}
               </div>
-              <span style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Trusted by <strong style={{ color: 'var(--color-text)' }}>100+ construction clients</strong></span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Specialist marketers for <strong style={{ color: 'var(--color-text)' }}>commercial construction</strong></span>
             </div>
           </div>
 
@@ -124,42 +125,13 @@ const Home = () => {
                 <img src={`${import.meta.env.BASE_URL}images/certifications/meta-partner.jpeg`} alt="Meta Business Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
               </div>
 
-              <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,255,255,0.03)', padding: '0.875rem 1rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                  <div style={{ display: 'flex', gap: '2px' }}>
-                    {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="var(--color-primary)" color="var(--color-primary)" />)}
-                  </div>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>5★ Google Business Rating</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,255,255,0.03)', padding: '0.875rem 1rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                  <Award size={16} color="var(--color-secondary)" />
-                  <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>10+ Years Serving Australia & NZ</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,255,255,0.03)', padding: '0.875rem 1rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                  <Users size={16} color="var(--color-primary)" />
-                  <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>100+ Clients Nationally</span>
-                </div>
+              <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem' }}>
+                <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', textAlign: 'center', lineHeight: 1.6, margin: 0 }}>
+                  Google Partner, Bing Ads Certified, and Meta Business Partner, serving commercial construction clients across Australia and New Zealand.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Metrics Banner */}
-      <section style={{ backgroundColor: '#0a0a0a', borderBottom: '1px solid var(--color-border)', borderTop: '1px solid var(--color-border)' }}>
-        <div className="container" style={{ padding: '3rem 1.5rem', display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '2rem' }}>
-          {[
-            { metric: "5★", label: "Google Rating", color: "var(--color-primary)" },
-            { metric: "10+", label: "Years in Service", color: "var(--color-secondary)" },
-            { metric: "100+", label: "Clients Nationally", color: "var(--color-primary)" },
-            { metric: "70,000+", label: "Total Hours of Work", color: "var(--color-secondary)" },
-            { metric: "100,000+", label: "Tasks Delivered", color: "var(--color-primary)" }
-          ].map((stat, i) => (
-            <div key={i} style={{ textAlign: 'center', minWidth: '150px' }}>
-              <div style={{ fontSize: '2.5rem', fontWeight: 800, color: stat.color, letterSpacing: '-0.02em', lineHeight: 1.2 }}>{stat.metric}</div>
-              <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600, marginTop: '0.5rem' }}>{stat.label}</div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -271,7 +243,7 @@ const Home = () => {
 
           <div className="mobile-carousel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto 3rem auto' }}>
             {[
-              { name: 'Growth', price: 'From $2,500/mo', desc: 'Foundation-level SEO and content marketing for construction suppliers looking to build organic visibility.', features: ['Technical SEO Audit & Fixes', 'Content Strategy & Creation', 'Monthly Performance Reporting', 'Dedicated Account Manager'], color: 'var(--color-secondary)' },
+              { name: 'Growth', price: 'From $1,800/mo', desc: 'Our flexible Digital Partner Program (DPP). One retainer covering whichever channels move the needle, including paid ads, with a dedicated account manager on call.', features: ['Flexible multi-channel retainer (SEO, content, more)', 'Google Ads / Paid Media Management', 'Technical SEO Audit & Fixes', 'Monthly Reporting & Dedicated Account Manager'], color: 'var(--color-secondary)' },
               { name: 'Accelerate', price: 'From $5,000/mo', desc: 'Multi-channel growth combining SEO, paid media, and CRO for construction businesses ready to scale.', features: ['Everything in Growth', 'Google Ads Management', 'Conversion Rate Optimisation', 'Digital Results Guarantee'], color: 'var(--color-primary)', featured: true },
               { name: 'Dominate', price: 'Custom', desc: 'Full-service digital marketing command for enterprise construction suppliers and national contractors.', features: ['Everything in Accelerate', 'AEO & GEO Optimisation', 'AI Lead Management & CRM', 'Priority Support & Strategy'], color: '#10b981' }
             ].map((pkg, i) => (
@@ -413,13 +385,14 @@ const Home = () => {
           }}>
             {[
               { name: "Sean Brown", role: "Managing Director", img: "CEO - Sean Brown.jpeg", slug: "sean-brown" },
-              { name: "Bridie Conroy", role: "Account Manager", img: "Account Manager - Bridie Conroy.jpeg" },
+              { name: "Bridie Conroy", role: "Account Manager", img: "Account Manager - Bridie Conroy.jpeg", slug: "bridie-conroy" },
               { name: "Hui-Sheng Yang", role: "AEO Strategist & AI Engineer", img: "AEO Strategist & AI Engineer - Hui-Sheng Yang.jpeg", slug: "sheng-yang" },
-              { name: "Marcela Vildoza", role: "Paid Media Specialist", img: "Paid Media Specialist - Marcela Vildoza.jpeg" },
+              { name: "Marcela Vildoza", role: "Paid Media Specialist", img: "Paid Media Specialist - Marcela Vildoza.jpeg", slug: "marcela-vildoza" },
               { name: "Celine Rose Merto", role: "Lead Graphic Designer", img: "Lead Graphic Designer & Social Media Specialist - Celine Rose Merto.jpeg", slug: "celine-merto" },
               { name: "Aizel Quirante", role: "Social Media Specialist", img: "Social Media Specialist - Aizel Quirante.jpeg" },
               { name: "Dorisa Ramos", role: "Social Media Specialist", img: "Social Media Specialist - Dorisa Ramos.jpeg", slug: "dorisa-ramos" },
-              { name: "Roger Duran", role: "Lead Web Developer", img: "Web Developer - Roger Duran.jpeg", slug: "roger-duran" }
+              { name: "Roger Duran", role: "Lead Web Developer", img: "Web Developer - Roger Duran.jpeg", slug: "roger-duran" },
+              { name: "Kane Estonina", role: "Web Developer", img: "Web Developer - Kane Estonina.svg", slug: "kane-estonina" }
             ].map((member, i) => {
               const cardInner = (
                 <>
@@ -504,6 +477,14 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      <StickyCTA
+        label="Specialist Construction Marketing"
+        primaryText="Book Strategy Session"
+        to="/contact"
+        secondaryText="View Our Results"
+        secondaryTo="/case-studies"
+      />
     </>
   );
 };

@@ -30,42 +30,53 @@ const CaseStudiesHub = () => {
       </section>
 
       <section className="section">
-        <div className="container" style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>
-            {caseStudies.map((study) => (
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div className="case-study-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.75rem' }}>
+            {caseStudies.map((study) => {
+              // Short, punchy preview: the first sentence of the company description only.
+              const preview = study.previewText || (study.intro.split('. ')[0].replace(/\.$/, '') + '.');
+              return (
               <div key={study.id} className="card fade-in" style={{ padding: '0', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                <div style={{ padding: '2.5rem', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary)', marginBottom: '1rem', fontWeight: 600, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    <TrendingUp size={16} /> {study.industry ? `${study.industry} Case Study` : 'Growth Case Study'}
-                  </div>
-                  {study.categories && study.categories.length > 0 && (
-                    <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-                      {study.categories.map((cat, idx) => (
-                        <span key={idx} style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', background: 'var(--color-bg)', border: '1px solid var(--color-border)', borderRadius: '100px', padding: '0.2rem 0.6rem' }}>{cat}</span>
-                      ))}
+                <div style={{ padding: '1.75rem', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.9rem', flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-primary)', fontWeight: 700, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                      <TrendingUp size={14} /> {study.industry || 'Growth'}
                     </div>
-                  )}
-                  <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', lineHeight: '1.3' }}>{study.title}</h3>
-                  <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem', lineHeight: '1.6', flexGrow: 1 }}>{study.intro}</p>
-                  
+                    {study.categories && study.categories.length > 0 && (
+                      <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+                        {study.categories.slice(0, 3).map((cat, idx) => (
+                          <span key={idx} style={{ fontSize: '0.55rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--color-text-muted)', background: 'var(--color-bg)', border: '1px solid var(--color-border)', borderRadius: '100px', padding: '0.15rem 0.5rem' }}>{cat}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.6rem', lineHeight: '1.25' }}>{study.title.replace(' Case Study', '')}</h3>
+                  <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem', lineHeight: '1.55', fontSize: '0.9rem', flexGrow: 1 }}>{preview}</p>
+
                   {study.results && study.results.length > 0 && (
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', padding: '1.5rem', background: 'var(--color-bg)', borderRadius: '8px', border: '1px solid var(--color-border)', marginBottom: '2rem' }}>
-                      {study.results.map((result, idx) => (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', padding: '1rem', background: 'var(--color-bg)', borderRadius: '8px', border: '1px solid var(--color-border)', marginBottom: '1.5rem' }}>
+                      {study.results.slice(0, 2).map((result, idx) => (
                         <div key={idx}>
-                          <div style={{ color: 'var(--color-primary)', fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.25rem' }}>{result.metric}</div>
-                          <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{result.label}</div>
+                          <div style={{ color: 'var(--color-primary)', fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.1rem' }}>{result.metric}</div>
+                          <div style={{ color: 'var(--color-text-muted)', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.04em', lineHeight: 1.3 }}>{result.label}</div>
                         </div>
                       ))}
                     </div>
                   )}
 
-                  <Link to={`/case-studies/${study.id}`} className="btn btn-secondary" style={{ width: '100%', justifyContent: 'center' }}>
-                    Read Full Case Study <ArrowRight size={18} />
+                  <Link to={`/case-studies/${study.id}`} className="btn btn-secondary" style={{ width: '100%', justifyContent: 'center', fontSize: '0.85rem' }}>
+                    Read Case Study <ArrowRight size={16} />
                   </Link>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
+
+          <style>{`
+            @media (max-width: 1000px) { .case-study-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+            @media (max-width: 640px) { .case-study-grid { grid-template-columns: 1fr !important; } }
+          `}</style>
 
           <div style={{ background: 'linear-gradient(145deg, var(--color-surface) 0%, #0f1115 100%)', padding: '3.5rem', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center', marginTop: '5rem' }}>
             <h2 className="mb-4">Want these same results?</h2>

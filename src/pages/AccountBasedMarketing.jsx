@@ -165,7 +165,7 @@ const AccountBasedMarketing = () => {
         </div>
       </section>
 
-      {/* The Framework — three pillars */}
+      {/* The Framework: three pillars */}
       <section className="section" style={{ background: 'var(--color-surface)' }}>
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>
@@ -209,7 +209,7 @@ const AccountBasedMarketing = () => {
         </div>
       </section>
 
-      {/* The ABM Engine — tabbed stages */}
+      {/* The ABM Engine: tabbed stages */}
       <section className="section" style={{ background: 'var(--color-surface)' }}>
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>
@@ -251,7 +251,7 @@ const AccountBasedMarketing = () => {
         </div>
       </section>
 
-      {/* Why Invest in ABM — benefits grid */}
+      {/* Why Invest in ABM: benefits grid */}
       <section className="section">
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>

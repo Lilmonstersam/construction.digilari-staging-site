@@ -26,6 +26,7 @@ const IntegrationStack = () => (
         { file: "Google_Ads_logo.svg.png", alt: "Google Ads" },
         { file: "LinkedIn-Ads.jpeg", alt: "LinkedIn Ads" },
         { file: "Meta-Logo.png", alt: "Meta" },
+        { file: "Claude.svg", alt: "Claude" },
         { file: "Antigravity.png", alt: "Antigravity" }
       ].map((logo, i) => (
         <img key={i} src={`${import.meta.env.BASE_URL}images/tools/${logo.file}`} width="120" height="36" loading="lazy" alt={logo.alt} style={{ height: '36px', width: 'auto', maxWidth: '120px', objectFit: 'contain', flexShrink: 0 }} />
@@ -37,9 +38,9 @@ const IntegrationStack = () => (
 // Case Studies Section component
 const CaseStudies = ({ service }) => {
   const caseStudies = service.caseStudies || [
-    { client: "Placeholder Client", industry: "Construction", stat: "—", metric: "Results Incoming", link: "#" },
-    { client: "Placeholder Client", industry: "Manufacturing", stat: "—", metric: "Results Incoming", link: "#" },
-    { client: "Placeholder Client", industry: "Suppliers", stat: "—", metric: "Results Incoming", link: "#" }
+    { client: "Placeholder Client", industry: "Construction", stat: "TBC", metric: "Results Incoming", link: "#" },
+    { client: "Placeholder Client", industry: "Manufacturing", stat: "TBC", metric: "Results Incoming", link: "#" },
+    { client: "Placeholder Client", industry: "Suppliers", stat: "TBC", metric: "Results Incoming", link: "#" }
   ];
 
   return (
