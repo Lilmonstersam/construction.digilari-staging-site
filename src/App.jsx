@@ -29,7 +29,7 @@ function ArticleRouter() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/construction.digilari-staging-site">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
