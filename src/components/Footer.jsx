@@ -44,7 +44,7 @@ const Footer = () => {
               <li><Link to="/services/seo-agency" style={{ color: 'var(--color-text-muted)' }}>Construction SEO</Link></li>
               <li><Link to="/services/ppc-agency" style={{ color: 'var(--color-text-muted)' }}>Google Ads</Link></li>
               <li><Link to="/services/smm" style={{ color: 'var(--color-text-muted)' }}>LinkedIn & Social</Link></li>
-              <li><Link to="/services/lead-generation" style={{ color: 'var(--color-text-muted)' }}>AI Lead Generation</Link></li>
+              <li><Link to="/services/lead-generation" style={{ color: 'var(--color-text-muted)' }}>Lead Generation & CRM</Link></li>
               <li><Link to="/services/conversion-rate-optimisation" style={{ color: 'var(--color-text-muted)' }}>CRO</Link></li>
               <li><Link to="/services/inbound-and-content-marketing" style={{ color: 'var(--color-text-muted)' }}>Inbound Marketing</Link></li>
               <li><Link to="/services/aeo" style={{ color: 'var(--color-text-muted)' }}>AEO Services</Link></li>
@@ -57,7 +57,7 @@ const Footer = () => {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <li><Link to="/why-digilari" style={{ color: 'var(--color-text-muted)' }}>Why Digilari</Link></li>
               <li><Link to="/our-process" style={{ color: 'var(--color-text-muted)' }}>Our Process</Link></li>
-              <li><Link to="/digital-marketing-partner-program" style={{ color: 'var(--color-text-muted)' }}>Partner Program</Link></li>
+              <li><Link to="/digital-marketing-partner-program" style={{ color: 'var(--color-text-muted)' }}>Partner Programme</Link></li>
               <li><Link to="/digital-results-guarantee" style={{ color: 'var(--color-text-muted)' }}>Results Guarantee</Link></li>
               <li><Link to="/faqs" style={{ color: 'var(--color-text-muted)' }}>FAQs</Link></li>
               <li style={{ marginTop: '0.5rem' }}><Link to="/case-studies" style={{ color: 'var(--color-text-muted)' }}>Case Studies</Link></li>

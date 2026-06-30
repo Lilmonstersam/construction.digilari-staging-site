@@ -413,16 +413,17 @@ export const servicesData = {
   },
 
   'lead-generation': {
-    title: 'Construction Lead Generation',
-    metaTitle: 'B2B Lead Generation for Commercial Construction',
-    metaDescription: 'Fill your pipeline with high-value commercial construction leads. We use targeted inbound strategies to attract project managers and specifiers.',
-    h1: 'High-Value Lead Generation for Suppliers',
-    intro: "We don't just drive traffic; we drive highly qualified commercial inquiries.",
-    intro2: 'Our end-to-end lead generation systems combine SEO, Paid Media, and CRO to consistently deliver technical buyers to your sales team.',
+    title: 'Construction Lead Generation & Marketing Automation',
+    metaTitle: 'Lead Generation Agency for Construction | Marketing Automation',
+    metaDescription: 'Digilari is a lead generation agency for commercial construction suppliers, combining marketing automation, speed to lead, CRM, and lead management.',
+    h1: 'Lead Generation, CRM, and Speed to Lead for Construction Suppliers',
+    intro: "We don't just create enquiries; we build the system that captures, qualifies, routes, and follows up every commercial lead before competitors respond.",
+    intro2: 'Our construction lead generation service combines SEO, paid media, social retargeting, CRM automation, email nurturing, and conversion optimisation into one lead management engine.',
     sections: [
-      { tocTitle: 'Quality Over Quantity', title: 'Targeting Decision Makers', content: 'We filter out the noise and residential inquiries, focusing strictly on B2B leads that move the needle for your business.' }
+      { tocTitle: 'Speed to Lead', title: 'Lead Management That Protects Every Enquiry', content: 'The highest-value construction enquiries often go to the supplier that responds first. We connect forms, calls, ads, email, and social lead sources into one CRM workflow, then trigger instant notifications, qualification steps, and nurture sequences so no opportunity gets buried in an inbox.' },
+      { tocTitle: 'Quality Over Quantity', title: 'Targeting Decision Makers Across the Supply Chain', content: 'We filter out residential noise and focus on the accounts that matter: architects, specifiers, builders, developers, estimators, procurement leads, distributors, and trade partners. Every channel is judged by qualified pipeline, not raw lead count.' }
     ],
-    cta: 'Start Generating Qualified Leads'
+    cta: 'Build Your Lead Generation System'
   },
 
   'roi-marketing-services': {
@@ -439,16 +440,64 @@ export const servicesData = {
   },
 
   'smm': {
-    title: 'Social Media Marketing (SMM)',
-    metaTitle: 'B2B Social Media Marketing for Construction',
-    metaDescription: 'Expert B2B social media marketing for commercial construction suppliers. Build authority across LinkedIn, Facebook, Instagram, X, and TikTok.',
-    h1: 'Social Media That Builds Industry Authority',
-    intro: "Social media in construction isn't about going viral; it's about industry presence and reaching the right decision-makers across all platforms.",
-    intro2: 'We use a multi-channel approach (including LinkedIn, Facebook, Instagram, X, and TikTok) to position your key personnel as thought leaders and put your brand directly in front of project decision-makers where they consume content.',
-    sections: [
-      { tocTitle: 'Platform Strategy', title: 'Platform-Specific B2B Strategies', content: 'We craft targeted outreach, engaging visual content, and technical leadership strategies tailored to the unique dynamics of each social platform, bypassing gatekeepers to connect directly with commercial estimators and architects.' }
+    title: 'B2B Social Media Marketing for Construction',
+    metaTitle: 'Social Media Marketing Agency for Construction Supply Chains',
+    metaDescription: 'B2B social media marketing for commercial construction suppliers. We use LinkedIn, Meta, Instagram, TikTok, and X to create authority, retarget demand, and feed qualified leads into CRM.',
+    h1: 'Social Media Marketing for the Commercial Construction Supply Chain',
+    heroBadge: 'B2B Social Media Marketing Agency',
+    intro: "Social media in construction is not about chasing reach for its own sake. It is a demand, trust, and lead-management layer for the people who specify, buy, distribute, install, and recommend what you supply.",
+    intro2: 'We connect LinkedIn, Facebook, Instagram, TikTok, and X to your CRM and marketing automation stack, so project proof, technical content, retargeting, and lead forms all move prospects closer to a qualified enquiry.',
+    pillarsSectionLabel: 'Why Social',
+    pillarsSectionTitle: 'Why Social Media Matters Across the Construction Supply Chain',
+    pillarsSectionDesc: 'Construction decisions are made by committees. Each platform has a different job in reaching, proving, and converting those decision-makers.',
+    pillars: [
+      { icon: 'Target', title: 'Reach the Right Buying Roles', desc: 'We build audiences around architects, estimators, developers, head contractors, procurement leads, distributors, and trade partners, then exclude consumer noise.', color: 'var(--color-secondary)' },
+      { icon: 'BarChart', title: 'Turn Project Proof Into Demand', desc: 'Completed projects, installs, product demos, technical posts, and executive insight become a visible proof system that shortens the trust-building stage.', color: 'var(--color-primary)' },
+      { icon: 'Zap', title: 'Route Social Leads Fast', desc: 'Lead forms, DMs, comments, and retargeting campaigns feed into CRM workflows for instant follow-up, qualification, and nurture.', color: '#10b981' }
     ],
-    cta: 'Build Your Industry Presence'
+    solutionLabel: 'Our Social System',
+    solutionTitle: 'How We Use Each Platform to Build Qualified Pipeline',
+    solutionTocTitle: 'Platform Strategy',
+    solutionDesc: 'Search demand is strong around social media marketing agency and platform-specific agency terms, but most pages stay generic. We use that intent without becoming generic: every page and campaign is framed around commercial construction lead outcomes.',
+    solutionTabs: [
+      { title: 'LinkedIn for Buying Committees', icon: 'Users', desc: 'LinkedIn carries the account-based layer: Sales Navigator lists, executive thought leadership, document ads, Lead Gen Forms, and direct outreach to the roles that influence specification and procurement.', placeholderText: 'LinkedIn Pipeline Preview' },
+      { title: 'Meta for Retargeting and Reach', icon: 'Target', desc: 'Facebook and Instagram keep your brand visible to site visitors, specifiers, trade partners, and lookalike audiences, then route high-intent engagement into tracked forms and CRM follow-up.', placeholderText: 'Meta Retargeting Preview' },
+      { title: 'Short-Form and Real-Time Authority', icon: 'Zap', desc: 'TikTok demonstrates products and process in search-friendly short video, while X keeps your executives active in industry conversations around tenders, infrastructure, policy, and project news.', placeholderText: 'Authority Engine Preview' }
+    ],
+    techTitle: 'The Stack Behind B2B Social Media Marketing',
+    techDesc: 'Platform content, paid social, retargeting, and CRM automation connected to qualified lead and pipeline reporting.',
+    techTools: [
+      { title: 'Audience and Account Mapping', icon: 'Search', desc: 'Role, company, industry, interest, CRM, pixel, and lookalike audiences mapped to your ideal commercial construction accounts.' },
+      { title: 'Content Production System', icon: 'Calendar', desc: 'A repeatable content calendar for technical posts, project proof, product demos, install videos, executive posts, and social proof.' },
+      { title: 'Paid Social and Retargeting', icon: 'Target', desc: 'LinkedIn, Meta, and short-form paid campaigns built around commercial audiences, exclusions, lead capture, and retargeting.' },
+      { title: 'CRM and Speed-to-Lead Automation', icon: 'Workflow', desc: 'Every form, DM, and campaign conversion can trigger lead routing, alerts, enrichment, and automated nurture.' },
+      { title: 'Creative Testing', icon: 'BrainCircuit', desc: 'Hook, offer, format, and audience tests that reveal which proof points convert specifiers and project teams.' },
+      { title: 'Pipeline Reporting', icon: 'BarChart', desc: 'Reporting on cost per qualified lead, meetings booked, nurture progress, and pipeline contribution, not likes in isolation.' }
+    ],
+    caseStudies: [
+      { client: 'Placeholder Client', industry: 'Construction Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Building Products', stat: 'TBC', metric: 'Results Incoming', link: '#' }
+    ],
+    sections: [
+      { tocTitle: 'Platform Roles', title: 'The Right Platform for Each Commercial Outcome', content: 'LinkedIn is the precision account and buying-committee channel. Facebook and Instagram are powerful for reach, retargeting, proof, and lead capture. TikTok is strongest for product and process demonstration, especially when younger estimators and trades search for how things work. X is best for real-time industry visibility and relationship-building with developers, contractors, industry bodies, and trade press.' }
+    ],
+    differentiators: [
+      { icon: 'TrendingUp', title: 'Social Built for Lead Generation', desc: 'We connect social content, ads, forms, retargeting, and CRM workflows so the channel contributes to qualified enquiries and pipeline.', color: 'var(--color-primary)' },
+      { icon: 'ShieldCheck', title: 'Construction-Specific Positioning', desc: 'Your content speaks to the commercial supply chain, not generic followers, with proof tailored to specifiers, estimators, builders, and trade partners.', color: 'var(--color-secondary)' }
+    ],
+    process: [
+      { title: 'Audience and Platform Audit', desc: 'We map your buying committee, sales cycle, existing content, CRM, and channel gaps.', icon: 'Search' },
+      { title: 'Proof and Content System', desc: 'We turn your projects, products, technical knowledge, and people into platform-specific content assets.', icon: 'Calendar' },
+      { title: 'Paid Social and Automation Launch', desc: 'We launch targeting, retargeting, lead forms, and CRM workflows so social demand is captured quickly.', icon: 'Zap' },
+      { title: 'Optimise to Pipeline', desc: 'We refine platforms, offers, and content against qualified leads, meetings, and pipeline contribution.', icon: 'TrendingUp' }
+    ],
+    faqs: [
+      { q: 'Which social platform is best for construction suppliers?', a: 'LinkedIn is usually the strongest platform for direct B2B lead generation. Instagram and Facebook support visual proof and retargeting, TikTok supports product demonstration and discovery, and X supports industry networking and real-time authority.' },
+      { q: 'Do you run paid social as well as organic content?', a: 'Yes. Organic authority, paid amplification, retargeting, and CRM-connected lead forms work best as one system rather than separate channel tasks.' },
+      { q: 'How do you measure social media results?', a: 'We track qualified leads, meetings booked, retargeting performance, lead source attribution, and pipeline value. Engagement matters only when it helps move the right audience closer to enquiry.' }
+    ],
+    cta: 'Build Your Social Lead Engine'
   },
 
   'zero-click-search': {
@@ -540,12 +589,12 @@ export const servicesData = {
 
   'facebook': {
     title: 'Facebook Marketing for Construction',
-    metaTitle: 'Facebook Marketing & Ads Agency for Construction | Digilari',
-    metaDescription: 'B2B Facebook marketing and advertising for commercial construction suppliers. Granular targeting, retargeting, and lookalike audiences that reach trade decision-makers.',
-    h1: 'Facebook Marketing for Commercial Construction',
-    heroBadge: 'B2B Facebook Advertising',
-    intro: 'Facebook is dismissed as B2C far too often. In reality, its targeting and retargeting tools are some of the most cost-effective ways to stay in front of construction business owners, sub-contractors, and trade decision-makers.',
-    intro2: 'We use custom audiences, lookalikes, and conversion-tracked campaigns to keep your commercial supply brand top of mind across the long procurement cycle, and to bring website visitors back when they are ready to enquire.',
+    metaTitle: 'Facebook Marketing Agency for Construction Supply Chains',
+    metaDescription: 'B2B Facebook marketing and Meta ads for commercial construction suppliers. Retarget specifiers, trade buyers, distributors, and contractors with CRM-connected lead capture.',
+    h1: 'Facebook Retargeting and Lead Capture for Commercial Construction',
+    heroBadge: 'B2B Facebook Marketing Agency',
+    intro: 'Facebook is dismissed as B2C far too often. In reality, Meta still gives construction suppliers one of the most efficient ways to retarget specifiers, trade buyers, distributors, installers, and contractors after they have already shown intent.',
+    intro2: 'We use custom audiences, lookalikes, exclusions, instant forms, and conversion tracking to keep your commercial supply brand visible through long procurement cycles, then route high-intent responses into CRM for fast follow-up.',
     pillarsSectionLabel: 'Why Facebook',
     pillarsSectionTitle: 'Why Facebook Still Works in Construction',
     pillarsSectionDesc: 'Reach, retargeting, and audience precision that few B2B channels can match on cost.',
@@ -555,13 +604,13 @@ export const servicesData = {
       { icon: 'Zap', title: 'Retargeting That Converts', desc: 'Most buyers leave without enquiring. Pixel-based retargeting brings specifiers and estimators back to your site and into your funnel.', color: '#10b981' }
     ],
     solutionLabel: 'Our Facebook System',
-    solutionTitle: 'How We Drive Awareness and Leads on Facebook',
+    solutionTitle: 'How We Use Facebook to Recover and Convert Demand',
     solutionTocTitle: 'Our Approach',
-    solutionDesc: 'We combine scroll-stopping creative, precise audiences, and full conversion tracking so every dollar is tied to enquiries, not just reach.',
+    solutionDesc: 'The market is already searching for Facebook marketing agency support. We use that demand in a construction-specific way: retargeting, proof-led creative, and instant lead capture tied to lead management workflows.',
     solutionTabs: [
-      { title: 'Audience Engineering', icon: 'Users', desc: 'We build and layer custom audiences, lookalikes, and exclusions from your CRM and pixel data so your ads reach commercial buyers and trade partners, not the general consumer.', placeholderText: 'Audience Builder Preview' },
-      { title: 'Project & Capability Creative', icon: 'BarChart', desc: 'From completed fit-outs to infrastructure showcases, we produce visual creative that proves your scale and capability and stops the scroll for the right audience.', placeholderText: 'Creative Showcase Preview' },
-      { title: 'Retargeting & Lead Capture', icon: 'Zap', desc: 'We retarget website visitors and engagers with lead forms and offers, recovering demand that would otherwise be lost and feeding it straight into your pipeline.', placeholderText: 'Retargeting Funnel Preview' }
+      { title: 'Audience Engineering', icon: 'Users', desc: 'We build and layer custom audiences, lookalikes, and exclusions from CRM and pixel data so ads reach commercial buyers, trade partners, and distributors, not general consumers.', placeholderText: 'Audience Builder Preview' },
+      { title: 'Project and Capability Creative', icon: 'BarChart', desc: 'Completed projects, installation proof, product benefits, supply reliability, and case-study snippets become creative that proves you can deliver at commercial scale.', placeholderText: 'Creative Showcase Preview' },
+      { title: 'Retargeting and Lead Capture', icon: 'Zap', desc: 'We retarget visitors and social engagers with lead forms and offers, then sync responses into CRM alerts, qualification, and nurture workflows.', placeholderText: 'Retargeting Funnel Preview' }
     ],
     techTitle: 'The Stack Behind Your Facebook Campaigns',
     techDesc: 'Meta tooling connected to your CRM for accurate targeting and revenue attribution.',
@@ -572,12 +621,12 @@ export const servicesData = {
       { title: 'Campaign Analytics', icon: 'BarChart', desc: 'Reporting that ties spend to cost per qualified lead and pipeline, not just reach and clicks.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Building Materials', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Trade Supply', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Building Materials', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Trade Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [
-      { tocTitle: 'Targeted Awareness', title: 'Building Brand Awareness That Converts', content: 'From localised site updates to large infrastructure project showcases, we use Facebook to demonstrate your scale and capability, then retarget the people who engage so awareness turns into tracked commercial enquiries rather than passive impressions.' }
+      { tocTitle: 'Targeted Awareness', title: 'Building Brand Awareness That Converts Into Follow-Up', content: 'From localised site updates to large infrastructure project showcases, we use Facebook to demonstrate scale and capability, then retarget the people who engage so awareness turns into tracked commercial enquiries rather than passive impressions.' }
     ],
     differentiators: [
       { icon: 'Shield', title: 'Budget Protection', desc: 'Audience exclusions and conversion tracking keep your spend on commercial buyers and out of irrelevant residential clicks.', color: 'var(--color-primary)' },
@@ -586,7 +635,7 @@ export const servicesData = {
     process: [
       { title: 'Audience & Pixel Setup', desc: 'We install accurate tracking and build custom, lookalike, and exclusion audiences from your CRM and site data.', icon: 'Settings' },
       { title: 'Creative Production', desc: 'We produce project-led creative that proves capability and resonates with trade and commercial buyers.', icon: 'BarChart' },
-      { title: 'Launch & Retarget', desc: 'We launch awareness and retargeting campaigns with lead capture, recovering demand that would otherwise be lost.', icon: 'Zap' },
+      { title: 'Launch and Retarget', desc: 'We launch awareness and retargeting campaigns with lead capture, recovering demand that would otherwise be lost.', icon: 'Zap' },
       { title: 'Optimise to Pipeline', desc: 'We refine audiences, creative, and budget against cost per qualified lead and pipeline value.', icon: 'TrendingUp' }
     ],
     faqs: [
@@ -599,12 +648,12 @@ export const servicesData = {
 
   'instagram': {
     title: 'Instagram Marketing for Construction',
-    metaTitle: 'Instagram Marketing Agency for Construction | Digilari',
-    metaDescription: 'Showcase commercial construction projects and premium materials on Instagram. Visual B2B marketing that builds specifier trust and drives enquiries.',
-    h1: 'Visual Authority on Instagram',
-    heroBadge: 'Visual B2B Marketing',
-    intro: 'Architects, designers, and structural engineers are visual buyers. They judge capability by what they can see, and Instagram is the portfolio they scroll before they ever request a quote.',
-    intro2: 'We turn your feed and Reels into a living portfolio of premium materials, architectural detail, and completed commercial fit-outs that proves your competence to specifiers and shortlists you for the next project.',
+    metaTitle: 'Instagram Marketing Agency for Construction Suppliers',
+    metaDescription: 'Instagram marketing for commercial construction suppliers. Turn project proof, premium materials, Reels, and visual portfolios into specifier trust and CRM-tracked enquiries.',
+    h1: 'Instagram Marketing That Wins Specification Trust',
+    heroBadge: 'Visual B2B Marketing Agency',
+    intro: 'Architects, designers, engineers, builders, and specifiers are visual buyers. They judge capability by what they can see, and Instagram is often the portfolio they scroll before they request technical information or a quote.',
+    intro2: 'We turn your feed, Reels, highlights, and paid retargeting into a living proof system for premium materials, product applications, architectural details, and completed commercial fit-outs, then route engaged prospects towards tracked enquiry paths.',
     pillarsSectionLabel: 'Why Instagram',
     pillarsSectionTitle: 'Why Instagram Matters for Specification',
     pillarsSectionDesc: 'Visual proof is the fastest way to earn trust with design-led commercial buyers.',
@@ -614,13 +663,13 @@ export const servicesData = {
       { icon: 'Zap', title: 'Reels Reach & Discovery', desc: 'Short-form video extends your reach well beyond your followers, surfacing your products to new commercial audiences.', color: '#10b981' }
     ],
     solutionLabel: 'Our Instagram System',
-    solutionTitle: 'How We Build a Specification-Winning Feed',
+    solutionTitle: 'How We Build a Specification-Winning Instagram System',
     solutionTocTitle: 'Our Approach',
-    solutionDesc: 'We combine art-directed project content, discovery-driven Reels, and clear conversion paths so visual engagement becomes commercial enquiries.',
+    solutionDesc: 'Instagram marketing agency searches carry clear commercial intent. We answer that intent with a construction-specific system: visual proof, short-form discovery, and conversion paths connected to lead management.',
     solutionTabs: [
       { title: 'Project Portfolio Curation', icon: 'BarChart', desc: 'We art-direct and sequence your project photography and architectural detail into a feed that reads as a premium portfolio, building instant credibility with specifiers and designers.', placeholderText: 'Curated Feed Preview' },
       { title: 'Reels & Process Video', icon: 'Zap', desc: 'We produce short-form video of installs, material close-ups, and finished spaces, engineered for discovery so new commercial audiences find your work.', placeholderText: 'Reels Production Preview' },
-      { title: 'Profile to Pipeline', icon: 'Workflow', desc: 'Optimised bio links, story highlights, and clear calls to action route engaged designers and project teams to your enquiry form and into your CRM.', placeholderText: 'Conversion Path Preview' }
+      { title: 'Profile to Pipeline', icon: 'Workflow', desc: 'Optimised bio links, story highlights, lead forms, and retargeting routes engaged designers and project teams to enquiry paths and into your CRM.', placeholderText: 'Conversion Path Preview' }
     ],
     techTitle: 'The Stack Behind Your Instagram Presence',
     techDesc: 'Content systems and analytics that turn a visual feed into measurable enquiries.',
@@ -631,12 +680,12 @@ export const servicesData = {
       { title: 'Engagement Analytics', icon: 'BarChart', desc: 'Reporting on reach, saves, profile visits, and enquiries so content is refined against commercial outcomes.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Architectural Products', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Premium Materials', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Architectural Products', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Premium Materials', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [
-      { tocTitle: 'Visual Portfolios', title: 'Dynamic Project Portfolios', content: 'Highlighting architectural detail, site progress, and finished commercial spaces turns your feed into a portfolio that does the selling for you, building trust with designers and specifiers and routing the most engaged among them straight to an enquiry.' }
+      { tocTitle: 'Visual Portfolios', title: 'Dynamic Project Portfolios for Specifiers', content: 'Highlighting architectural detail, site progress, product application, and finished commercial spaces turns your feed into a portfolio that does the selling for you, building trust with designers and specifiers and routing the most engaged among them straight to an enquiry.' }
     ],
     differentiators: [
       { icon: 'ShieldCheck', title: 'Built for Specifiers', desc: 'Our content is art-directed for design-led commercial buyers, not generic engagement, so it earns the right kind of attention.', color: 'var(--color-primary)' },
@@ -658,12 +707,12 @@ export const servicesData = {
 
   'linkedin': {
     title: 'LinkedIn Marketing for Construction',
-    metaTitle: 'LinkedIn Marketing Agency for Construction | B2B Lead Generation',
-    metaDescription: 'B2B LinkedIn marketing and lead generation for commercial construction suppliers. We connect you with architects, estimators, specifiers, and procurement decision-makers.',
-    h1: 'LinkedIn Lead Generation for Construction',
-    heroBadge: 'B2B LinkedIn Marketing',
-    intro: 'LinkedIn is where commercial construction decisions start. Architects, estimators, specifiers, project managers, and procurement leads research suppliers and build their shortlist here long before a tender is issued.',
-    intro2: 'As a B2B LinkedIn marketing agency for the construction supply chain, we turn that research behaviour into a predictable pipeline of qualified commercial enquiries, not vanity followers.',
+    metaTitle: 'LinkedIn Marketing Agency for Construction Lead Generation',
+    metaDescription: 'LinkedIn marketing agency for commercial construction suppliers. Reach architects, estimators, specifiers, procurement teams, and distributors with ABM, ads, and CRM-connected lead forms.',
+    h1: 'LinkedIn Lead Generation for the Construction Supply Chain',
+    heroBadge: 'B2B LinkedIn Marketing Agency',
+    intro: 'LinkedIn is where commercial construction decisions start. Architects, estimators, specifiers, developers, project managers, distributors, and procurement leads research suppliers and build shortlists long before a tender is issued.',
+    intro2: 'As a LinkedIn marketing agency for the construction supply chain, we combine account-based targeting, executive authority, paid amplification, Lead Gen Forms, and CRM automation so LinkedIn becomes a measurable source of qualified commercial enquiries.',
     pillarsSectionLabel: 'Why LinkedIn',
     pillarsSectionTitle: 'Why LinkedIn Wins B2B Construction Work',
     pillarsSectionDesc: 'No other channel puts you in front of the entire commercial buying committee with this precision.',
@@ -675,11 +724,11 @@ export const servicesData = {
     solutionLabel: 'Our LinkedIn System',
     solutionTitle: 'How We Generate Commercial Leads on LinkedIn',
     solutionTocTitle: 'Our Approach',
-    solutionDesc: 'We combine an optimised company and executive presence, targeted outreach, and paid amplification into one connected lead engine built for long construction sales cycles.',
+    solutionDesc: 'LinkedIn marketing agency searches show clear commercial intent, with broad agency service pages dominating the results. We make the page and service more specific: construction buying committees, account targeting, and speed-to-lead automation.',
     solutionTabs: [
       { title: 'Targeted Outreach & ABM', icon: 'Users', desc: 'Using Sales Navigator and account-based targeting, we run personalised connection and messaging sequences to the exact estimators, architects, and procurement leads on your ideal account list, booking meetings with decision-makers who rarely answer a cold call.', placeholderText: 'Sales Navigator Outreach Preview' },
       { title: 'Thought Leadership Content', icon: 'BrainCircuit', desc: 'We position your key personnel as the technical authority in your category with specification guides, project breakdowns, and insight posts that earn trust across the commercial buying committee.', placeholderText: 'Executive Content Preview' },
-      { title: 'LinkedIn Ads & Lead Gen Forms', icon: 'Target', desc: 'Sponsored content, document ads, and pre-filled Lead Gen Forms put your offer in front of high-value accounts and capture enquiries with minimal friction, all tracked back to pipeline value.', placeholderText: 'LinkedIn Ads Dashboard Preview' }
+      { title: 'LinkedIn Ads and Lead Gen Forms', icon: 'Target', desc: 'Sponsored content, document ads, conversation ads, and pre-filled Lead Gen Forms put your offer in front of high-value accounts and capture enquiries with minimal friction, all tracked back to pipeline value.', placeholderText: 'LinkedIn Ads Dashboard Preview' }
     ],
     techTitle: 'The Stack Behind Your LinkedIn Pipeline',
     techDesc: 'We connect LinkedIn to your CRM so every connection, comment, and click becomes a tracked, nurtured lead.',
@@ -690,12 +739,12 @@ export const servicesData = {
       { title: 'Campaign & ABM Analytics', icon: 'BarChart', desc: 'Account-level reporting tying spend and outreach to meetings booked and pipeline created.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Building Materials', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Structural Supply', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Building Materials', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Fit-Out', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Structural Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [
-      { tocTitle: 'Direct Outreach', title: 'Bypassing the Gatekeepers', content: 'We combine Sales Navigator targeting with personalised messaging sequences to reach the exact decision-makers in your ideal commercial accounts, then nurture every conversation through to a booked meeting and a tracked opportunity in your pipeline.' }
+      { tocTitle: 'Direct Outreach', title: 'Reaching the Buying Committee Before Tender', content: 'We combine Sales Navigator targeting with personalised messaging sequences to reach the exact decision-makers in your ideal commercial accounts, then nurture every conversation through to a booked meeting and a tracked opportunity in your pipeline.' }
     ],
     differentiators: [
       { icon: 'TrendingUp', title: 'Pipeline, Not Vanity Metrics', desc: 'We measure LinkedIn on meetings booked, qualified leads, and pipeline value, with reporting tied directly to your commercial KPIs.', color: 'var(--color-primary)' },
@@ -704,8 +753,8 @@ export const servicesData = {
     process: [
       { title: 'ICP & Account Mapping', desc: 'We define your ideal commercial accounts and map the full buying committee, from specifiers to procurement, into targeted lists.', icon: 'Target' },
       { title: 'Profile & Content Foundation', desc: 'We optimise your company page and executive profiles and build a technical content engine that earns trust at the specification stage.', icon: 'Settings' },
-      { title: 'Outreach & Ads Launch', desc: 'We deploy personalised outreach sequences and Lead Gen ad campaigns, capturing enquiries straight into your CRM.', icon: 'Zap' },
-      { title: 'Nurture & Optimise', desc: 'We nurture longer construction sales cycles and continuously refine targeting and messaging against pipeline performance.', icon: 'TrendingUp' }
+      { title: 'Outreach and Ads Launch', desc: 'We deploy personalised outreach sequences and Lead Gen ad campaigns, capturing enquiries straight into your CRM.', icon: 'Zap' },
+      { title: 'Nurture and Optimise', desc: 'We nurture longer construction sales cycles and continuously refine targeting and messaging against pipeline performance.', icon: 'TrendingUp' }
     ],
     faqs: [
       { q: 'Is LinkedIn really effective for construction suppliers?', a: 'Yes. Commercial construction is a considered, multi-stakeholder purchase, and LinkedIn is the one channel where you can reach estimators, specifiers, project managers, and procurement leads by exact role. It is built for long B2B sales cycles, not impulse buys.' },
@@ -718,12 +767,12 @@ export const servicesData = {
 
   'tiktok': {
     title: 'TikTok Marketing for Construction',
-    metaTitle: 'TikTok Marketing Agency for Construction | Digilari',
-    metaDescription: 'Engaging, fast-paced TikTok content for the construction sector. Demonstrate products and process, build authority, and attract both buyers and talent.',
-    h1: 'Engaging the Next Generation on TikTok',
-    heroBadge: 'Short-Form Video',
-    intro: 'TikTok has become a search engine for how things are made, installed, and specified. A younger cohort of estimators, engineers, and trades increasingly research products and suppliers here before anywhere else.',
-    intro2: 'We help you create authentic, fast-paced content that demonstrates your products and process, builds category authority, and attracts both forward-thinking B2B partners and the skilled talent your business needs to grow.',
+    metaTitle: 'TikTok Marketing Agency for Construction Product Discovery',
+    metaDescription: 'TikTok marketing for construction suppliers. Demonstrate products, installation, process, and site proof with short-form video that supports discovery, retargeting, and recruitment.',
+    h1: 'TikTok Marketing for Product and Process Discovery',
+    heroBadge: 'Short-Form Video Marketing',
+    intro: 'TikTok has become a search engine for how things are made, installed, compared, and specified. A younger cohort of estimators, engineers, trades, and project staff increasingly research products and suppliers through short-form video.',
+    intro2: 'We help construction suppliers create credible, fast-paced content that demonstrates products, installation methods, logistics, and site outcomes, then use those assets for discovery, retargeting, recruitment, and sales enablement.',
     pillarsSectionLabel: 'Why TikTok',
     pillarsSectionTitle: 'Why TikTok Belongs in a Construction Strategy',
     pillarsSectionDesc: 'Demonstration beats description, and TikTok rewards demonstration at scale.',
@@ -735,10 +784,10 @@ export const servicesData = {
     solutionLabel: 'Our TikTok System',
     solutionTitle: 'How We Make TikTok Work for B2B Construction',
     solutionTocTitle: 'Our Approach',
-    solutionDesc: 'We turn your products, sites, and people into a repeatable content engine engineered for reach, authority, and discovery.',
+    solutionDesc: 'TikTok marketing agency terms carry meaningful commercial search demand. We position TikTok as a construction product discovery channel, not a novelty channel, with video assets that can support sales, ads, and hiring.',
     solutionTabs: [
-      { title: 'Product & Process Demos', icon: 'Zap', desc: 'We script and produce short-form video that demonstrates how your products perform, install, and solve specification problems, the content that earns saves and shares from a technical audience.', placeholderText: 'Product Demo Preview' },
-      { title: 'Behind-the-Scenes & Culture', icon: 'Users', desc: 'Site logistics, team expertise, and behind-the-scenes content build authentic authority and double as a powerful recruitment channel.', placeholderText: 'Culture Content Preview' },
+      { title: 'Product and Process Demos', icon: 'Zap', desc: 'We script and produce short-form video that demonstrates how your products perform, install, compare, and solve specification problems, the content that earns saves and shares from a technical audience.', placeholderText: 'Product Demo Preview' },
+      { title: 'Behind the Scenes and Culture', icon: 'Users', desc: 'Site logistics, team expertise, manufacturing, warehouse operations, and behind-the-scenes content build authentic authority and double as a recruitment channel.', placeholderText: 'Culture Content Preview' },
       { title: 'Search-Optimised Content', icon: 'Search', desc: 'We optimise captions, hooks, and keywords so your videos surface in TikTok search when buyers look up techniques and products in your category.', placeholderText: 'TikTok Search Preview' }
     ],
     techTitle: 'The Stack Behind Your TikTok Channel',
@@ -750,22 +799,22 @@ export const servicesData = {
       { title: 'Performance Analytics', icon: 'BarChart', desc: 'Reporting on watch time, shares, and profile actions to refine the content that drives reach and enquiries.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Product Manufacturer', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Specialist Trades', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Equipment Supply', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Product Manufacturer', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Specialist Trades', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Equipment Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [
-      { tocTitle: 'Authentic Engagement', title: 'Showcasing Operational Excellence', content: 'Short-form video is unparalleled for demonstrating physical products, site logistics, and your team\'s expertise in real time. We turn that raw material into a search-optimised content engine that builds category authority and surfaces your brand exactly when buyers and future hires are looking.' }
+      { tocTitle: 'Authentic Engagement', title: 'Showcasing Operational Excellence in Short-Form Video', content: 'Short-form video is unmatched for demonstrating physical products, site logistics, install details, and team expertise in real time. We turn that raw material into a search-optimised content engine that builds category authority and surfaces your brand exactly when buyers and future hires are looking.' }
     ],
     differentiators: [
       { icon: 'BrainCircuit', title: 'B2B Translation', desc: 'We adapt fast-moving TikTok formats to a technical construction audience, so reach never comes at the expense of credibility.', color: 'var(--color-primary)' },
-      { icon: 'TrendingUp', title: 'Reach With a Purpose', desc: 'Every video targets discovery, authority, or recruitment, with performance measured against those goals.', color: 'var(--color-secondary)' }
+      { icon: 'TrendingUp', title: 'Reach With a Purpose', desc: 'Every video targets discovery, authority, retargeting, sales enablement, or recruitment, with performance measured against those goals.', color: 'var(--color-secondary)' }
     ],
     process: [
       { title: 'Content Strategy', desc: 'We identify the products, processes, and stories worth filming and the search terms they should target.', icon: 'Search' },
       { title: 'Production System', desc: 'We build a repeatable filming and editing workflow around proven hooks and formats.', icon: 'Calendar' },
       { title: 'Publish & Optimise', desc: 'We publish consistently, adapt relevant trends, and optimise for TikTok search and watch time.', icon: 'Zap' },
-      { title: 'Measure & Scale', desc: 'We double down on the formats that drive reach, authority, and enquiries.', icon: 'TrendingUp' }
+      { title: 'Measure and Scale', desc: 'We double down on the formats that drive reach, authority, retargeting pools, enquiries, and hiring interest.', icon: 'TrendingUp' }
     ],
     faqs: [
       { q: 'Is TikTok really relevant for construction?', a: 'Increasingly, yes. A younger cohort of estimators, engineers, and trades use TikTok to research how products work and install. Demonstration content builds authority and surfaces your brand in that search behaviour.' },
@@ -777,12 +826,12 @@ export const servicesData = {
 
   'x': {
     title: 'X (Twitter) Marketing for Construction',
-    metaTitle: 'X (Twitter) Marketing Agency for Construction | Digilari',
-    metaDescription: 'Use X (formerly Twitter) to join the industry conversation, share insight, and network with commercial developers, contractors, and industry bodies.',
-    h1: 'Real-Time Industry Insights on X',
-    heroBadge: 'Real-Time Networking',
-    intro: 'X is where construction news, infrastructure announcements, tenders, and economic updates break first. It is a real-time feed of the industry your buyers and partners follow daily.',
-    intro2: 'We help you maintain a vocal, authoritative presence, commenting on industry trends, sharing rapid updates, and networking directly with developers, head contractors, and the industry bodies that influence commercial work.',
+    metaTitle: 'Twitter Marketing Agency for Construction | X Strategy',
+    metaDescription: 'X and Twitter marketing for commercial construction suppliers. Build executive authority, track industry signals, and network with developers, contractors, associations, and trade media.',
+    h1: 'X and Twitter Marketing for Real-Time Construction Authority',
+    heroBadge: 'Real-Time Industry Networking',
+    intro: 'X, still searched by many buyers as Twitter, is where construction news, infrastructure announcements, tenders, policy changes, and economic updates break quickly. It is a live industry feed your buyers, partners, associations, and trade media follow daily.',
+    intro2: 'We help you maintain a credible, authoritative presence, commenting on relevant trends, sharing rapid updates, and networking directly with developers, head contractors, distributors, industry bodies, journalists, and partners that influence commercial work.',
     pillarsSectionLabel: 'Why X',
     pillarsSectionTitle: 'Why X Matters for Commercial Construction',
     pillarsSectionDesc: 'Real-time visibility with the people and organisations that shape the pipeline.',
@@ -794,10 +843,10 @@ export const servicesData = {
     solutionLabel: 'Our X System',
     solutionTitle: 'How We Build Authority and Networks on X',
     solutionTocTitle: 'Our Approach',
-    solutionDesc: 'We combine a consistent voice, timely engagement, and strategic networking to turn presence on X into relationships and referral demand.',
+    solutionDesc: 'Search demand is still stronger for Twitter marketing agency than X marketing agency, so we use both terms while positioning the service around modern X strategy: listening, executive voice, and relationship-led demand.',
     solutionTabs: [
-      { title: 'Industry Monitoring & Engagement', icon: 'Search', desc: 'We track the accounts, hashtags, and topics that move your market and engage in the right conversations quickly, so your brand is part of the discussion rather than watching it.', placeholderText: 'Listening Dashboard Preview' },
-      { title: 'Executive Voice & Content', icon: 'BrainCircuit', desc: 'We ghost-write and schedule insight, commentary, and project updates that position your leadership as a credible authority in commercial construction.', placeholderText: 'Content Calendar Preview' },
+      { title: 'Industry Monitoring and Engagement', icon: 'Search', desc: 'We track the accounts, hashtags, tenders, project signals, and topics that move your market and engage in the right conversations quickly, so your brand is part of the discussion rather than watching it.', placeholderText: 'Listening Dashboard Preview' },
+      { title: 'Executive Voice and Content', icon: 'BrainCircuit', desc: 'We ghost-write and schedule insight, commentary, project updates, and rapid reactions that position your leadership as a credible authority in commercial construction.', placeholderText: 'Content Calendar Preview' },
       { title: 'Strategic Networking', icon: 'Network', desc: 'We build relationships with developers, contractors, associations, and journalists, turning followers into a network that generates referrals and opportunities.', placeholderText: 'Networking Map Preview' }
     ],
     techTitle: 'The Stack Behind Your Presence on X',
@@ -809,9 +858,9 @@ export const servicesData = {
       { title: 'Analytics & Reporting', icon: 'BarChart', desc: 'Reporting on reach, engagement, and the relationships and referrals that follow.' }
     ],
     caseStudies: [
-      { client: 'Placeholder Client', industry: 'Infrastructure Supply', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Commercial Developer', stat: '—', metric: 'Results Incoming', link: '#' },
-      { client: 'Placeholder Client', industry: 'Building Products', stat: '—', metric: 'Results Incoming', link: '#' }
+      { client: 'Placeholder Client', industry: 'Infrastructure Supply', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Commercial Developer', stat: 'TBC', metric: 'Results Incoming', link: '#' },
+      { client: 'Placeholder Client', industry: 'Building Products', stat: 'TBC', metric: 'Results Incoming', link: '#' }
     ],
     sections: [
       { tocTitle: 'Real-Time Networking', title: 'Joining the B2B Conversation', content: 'We position your executives as thought leaders by engaging in relevant industry discussions, reacting to tenders and project news as it breaks, and networking with the developers, contractors, and industry bodies that shape commercial pipelines.' }
@@ -822,9 +871,9 @@ export const servicesData = {
     ],
     process: [
       { title: 'Listening & Positioning', desc: 'We map the accounts, topics, and signals that matter and define your voice and content pillars.', icon: 'Search' },
-      { title: 'Content & Cadence', desc: 'We build a consistent schedule of insight, news reaction, and commentary for your leadership.', icon: 'Calendar' },
-      { title: 'Engage & Network', desc: 'We engage in real time and build relationships with developers, contractors, and industry bodies.', icon: 'Network' },
-      { title: 'Measure & Refine', desc: 'We report on reach, engagement, and resulting relationships, then refine the approach.', icon: 'TrendingUp' }
+      { title: 'Content and Cadence', desc: 'We build a consistent schedule of insight, news reaction, and commentary for your leadership.', icon: 'Calendar' },
+      { title: 'Engage and Network', desc: 'We engage in real time and build relationships with developers, contractors, and industry bodies.', icon: 'Network' },
+      { title: 'Measure and Refine', desc: 'We report on reach, engagement, and resulting relationships, then refine the approach.', icon: 'TrendingUp' }
     ],
     faqs: [
       { q: 'Why use X for a construction supplier?', a: 'X is where industry news, tenders, and infrastructure announcements break, and where developers, contractors, and associations are active. A timely, credible presence keeps you visible to the people who influence commercial work.' },

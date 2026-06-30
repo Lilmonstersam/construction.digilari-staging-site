@@ -4,15 +4,15 @@ import { List, X, ChevronRight } from 'lucide-react';
 
 export default function StickyTOC() {
   const [headings, setHeadings] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
+  const [openState, setOpenState] = useState({ path: '', isOpen: false });
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeId, setActiveId] = useState('');
   const location = useLocation();
+  const isOpen = openState.path === location.pathname && openState.isOpen;
 
-  // Reset open state on page change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
+  const setIsOpenForCurrentPath = (nextIsOpen) => {
+    setOpenState({ path: location.pathname, isOpen: nextIsOpen });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,7 +75,7 @@ export default function StickyTOC() {
       {/* Toggle Button - visible on ALL screen sizes */}
       <button 
         className="toc-toggle-btn"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpenForCurrentPath(!isOpen)}
         style={{
           position: 'fixed',
           zIndex: 999,
@@ -106,7 +106,7 @@ export default function StickyTOC() {
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById(h.id).scrollIntoView({ behavior: 'smooth' });
-                    setIsOpen(false);
+                    setIsOpenForCurrentPath(false);
                   }}
                   className={`toc-link ${activeId === h.id ? 'toc-link-active' : ''}`}
                 >

@@ -96,7 +96,7 @@ const Header = () => {
                     <li><Link to="/services/ppc-agency">Google Ads Management</Link></li>
                     <li><Link to="/services/conversion-rate-optimisation">Conversion Optimisation</Link></li>
                     <li><Link to="/services/inbound-and-content-marketing">Technical Content Marketing</Link></li>
-                    <li><Link to="/services/lead-generation">AI Lead Generation</Link></li>
+                    <li><Link to="/services/lead-generation">Lead Generation & CRM</Link></li>
                     <li><Link to="/services/account-based-marketing">Account-Based Marketing</Link></li>
                     <li><Link to="/services/email-marketing">Email Marketing (EDM)</Link></li>
                   </ul>
@@ -132,7 +132,7 @@ const Header = () => {
                   <ul>
                     <li><Link to="/why-digilari">Why Choose Digilari?</Link></li>
                     <li><Link to="/our-process">Our Strategic Process</Link></li>
-                    <li><Link to="/digital-marketing-partner-program">The Partner Program</Link></li>
+                    <li><Link to="/digital-marketing-partner-program">The Partner Programme</Link></li>
                     <li><Link to="/digital-results-guarantee">Digital Results Guarantee</Link></li>
                   </ul>
                 </div>
@@ -209,7 +209,7 @@ const Header = () => {
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/ppc-agency" onClick={() => setIsOpen(false)}>Google Ads Management</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/conversion-rate-optimisation" onClick={() => setIsOpen(false)}>Conversion Optimisation</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/inbound-and-content-marketing" onClick={() => setIsOpen(false)}>Technical Content Marketing</Link></li>
-          <li style={{ paddingLeft: '1rem' }}><Link to="/services/lead-generation" onClick={() => setIsOpen(false)}>AI Lead Generation</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/services/lead-generation" onClick={() => setIsOpen(false)}>Lead Generation & CRM</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/account-based-marketing" onClick={() => setIsOpen(false)}>Account-Based Marketing</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/services/email-marketing" onClick={() => setIsOpen(false)}>Email Marketing (EDM)</Link></li>
 
@@ -229,7 +229,7 @@ const Header = () => {
           <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>About Digilari</span></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/why-digilari" onClick={() => setIsOpen(false)}>Why Choose Digilari?</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/our-process" onClick={() => setIsOpen(false)}>Our Strategic Process</Link></li>
-          <li style={{ paddingLeft: '1rem' }}><Link to="/digital-marketing-partner-program" onClick={() => setIsOpen(false)}>The Partner Program</Link></li>
+          <li style={{ paddingLeft: '1rem' }}><Link to="/digital-marketing-partner-program" onClick={() => setIsOpen(false)}>The Partner Programme</Link></li>
           <li style={{ paddingLeft: '1rem' }}><Link to="/digital-results-guarantee" onClick={() => setIsOpen(false)}>Digital Results Guarantee</Link></li>
 
           <li style={{ marginTop: '0.5rem' }}><span style={{ color: 'var(--color-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Resources & Proof</span></li>

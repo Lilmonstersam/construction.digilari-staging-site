@@ -62,7 +62,7 @@ const LeadGeneration = () => {
     {
       title: "Intelligent Lead Capture & Routing",
       icon: <Network size={20} />,
-      desc: "No more lost leads or messy lists. Every lead is captured accurately, categorised by intent and behaviour, and routed to the right workflow in real time for faster response and fewer missed opportunities.",
+      desc: "No more lost leads, messy spreadsheets, or delayed handovers. Every enquiry is captured accurately, categorised by source, intent, and account fit, then routed to the right owner in real time.",
       placeholderText: "Lead Routing Automation Preview",
       bgColor: 'var(--color-surface)'
     },
@@ -76,7 +76,7 @@ const LeadGeneration = () => {
     {
       title: "AI Conversational Engagement",
       icon: <MessageSquare size={20} />,
-      desc: "Use intuitive AI tools to start conversations, nurture responses, and schedule appointments 24/7 without human intervention. Intelligent messaging across email, SMS, and webchat builds conversion momentum.",
+      desc: "Use intuitive AI tools to start conversations, qualify intent, nurture responses, and schedule appointments without delay. Intelligent messaging across email, SMS, and webchat keeps conversion momentum high.",
       placeholderText: "AI Appointment Setter Preview",
       bgColor: 'rgba(253, 155, 40, 0.1)'
     }
@@ -108,8 +108,8 @@ const LeadGeneration = () => {
   return (
     <>
       <Helmet>
-        <title>Lead Generation Agency for Construction | Marketing Automation & Speed to Lead</title>
-        <meta name="description" content="Digilari is a construction lead generation agency. Our marketing automation and lead management systems deliver speed to lead, capturing, qualifying, and converting every commercial enquiry." />
+        <title>Marketing Automation Agency for Construction Lead Generation</title>
+        <meta name="description" content="Digilari is a construction lead generation and marketing automation agency. We build CRM, speed-to-lead, lead management, and nurture systems for commercial suppliers." />
       </Helmet>
       
       {/* Smart Sticky Banner */}
@@ -120,7 +120,7 @@ const LeadGeneration = () => {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <span style={{ color: 'var(--color-text)', fontWeight: 800, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>AI Lead Management</span>
+            <span style={{ color: 'var(--color-text)', fontWeight: 800, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Marketing Automation and Lead Management</span>
           </div>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <button onClick={() => scrollToSection('contact')} className="btn btn-primary" style={{ fontSize: '0.8rem', padding: '0.5rem 1rem' }}>
@@ -138,24 +138,24 @@ const LeadGeneration = () => {
         <div className="container text-center" style={{ position: 'relative', zIndex: 10 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--color-border)', padding: '0.25rem 1rem', borderRadius: '100px', marginBottom: '2.5rem' }}>
             <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-secondary)', animation: 'pulse 2s infinite' }}></span>
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)' }}>Construction Lead Generation Agency</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)' }}>Construction Marketing Automation Agency</span>
           </div>
           
           <h1 className="text-gradient" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', marginBottom: '2rem' }}>
-            AI-DRIVEN <br/>
+            SPEED-TO-LEAD <br/>
             <span className="text-gradient-primary">
-              LEAD MANAGEMENT
+              MARKETING AUTOMATION
             </span> <br/>
-            & AUTOMATION
+            FOR CONSTRUCTION
           </h1>
           
           <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto', lineHeight: 1.6 }}>
-            Generating enquiries is only half the job. As a construction lead generation agency, we add the marketing automation and lead management layer that responds in seconds, qualifies every lead, and converts demand into revenue. Speed to lead is the difference between a quote and a competitor's contract.
+            Generating enquiries is only half the job. As a construction lead generation and marketing automation agency, we build the CRM, lead routing, qualification, nurture, and speed-to-lead workflows that respond in seconds and keep commercial opportunities moving until they become pipeline.
           </p>
           
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <button onClick={() => scrollToSection('contact')} className="btn btn-primary">
-              Book Strategy Call <ArrowRight size={16} />
+              Build My Lead Engine <ArrowRight size={16} />
             </button>
             <button onClick={() => scrollToSection('contact')} className="btn btn-secondary">
               Request a Demo
@@ -168,16 +168,16 @@ const LeadGeneration = () => {
       <section className="section" style={{ background: 'var(--color-surface)' }}>
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>
-            <span style={{ display: 'block', color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>The Modern Sales Challenge</span>
-            <h2 data-toc="The Sales Challenge">Why AI-Driven Lead Management Matters Today</h2>
+            <span style={{ display: 'block', color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>The Speed-to-Lead Challenge</span>
+            <h2 data-toc="The Sales Challenge">Why Construction Leads Go Cold So Quickly</h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', marginTop: '1.5rem' }}>
-              People are overwhelmed with manual follow-ups, cold contacts fall through the cracks, and sales teams waste time on low-intent leads. AI-driven lead management changes everything.
+              Project enquiries are time-sensitive. If a quote request, lead form, catalogue download, or social lead sits untouched, the buyer keeps researching and a faster competitor becomes the safer option. Marketing automation closes that gap.
             </p>
           </div>
           
           <div className="grid-3">
             {[
-              { icon: <Target size={32} />, title: "Qualify & Prioritise", desc: "Automatically qualify and prioritise leads based on behaviour and intent. Stop wasting time on unqualified prospects and focus entirely on high-value accounts.", color: 'var(--color-secondary)' },
+              { icon: <Target size={32} />, title: "Qualify and Prioritise", desc: "Automatically qualify and prioritise leads based on behaviour, source, project type, and fit. Stop wasting time on unqualified prospects and focus on high-value accounts.", color: 'var(--color-secondary)' },
               { icon: <Users size={32} />, title: "Personalise at Scale", desc: "Deliver highly personalised experiences to thousands of prospects simultaneously. Make every lead feel like they are your only focus, without the manual effort.", color: 'var(--color-primary)' },
               { icon: <Zap size={32} />, title: "Speed to Lead", desc: "Reduce response times from hours to seconds. Speed to lead means engaging every enquiry the moment intent is highest, before a competitor does, and it is the single biggest lever on conversion.", color: '#10b981' }
             ].map((pillar, i) => (
@@ -198,9 +198,9 @@ const LeadGeneration = () => {
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>
             <span style={{ display: 'block', color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>Introducing Digilari CRM Manager</span>
-            <h2 data-toc="Our AI Solution">How Our AI Lead Management System Solves Your Problems</h2>
+            <h2 data-toc="Our AI Solution">How Our Marketing Automation System Manages Every Lead</h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', marginTop: '1.5rem' }}>
-              Change the way you manage customer relationships with a system that is built to think for you. A powerful Go High Level CRM set-up configured by Digilari to bring your data to life.
+              Change the way your sales team handles demand with a CRM system built for construction lead management. We configure Go High Level and connected tools around your enquiry sources, sales stages, response rules, and nurture requirements.
             </p>
           </div>
           
@@ -246,9 +246,9 @@ const LeadGeneration = () => {
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 4rem auto' }}>
             <div style={{ display: 'inline-block', background: 'var(--color-primary)', color: '#0f1115', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '0.25rem 0.75rem', marginBottom: '1.5rem', borderRadius: '4px' }}>The Technology Stack</div>
-            <h2 data-toc="AI Tools Included">Result-Focused AI Tools You Will Get</h2>
+            <h2 data-toc="AI Tools Included">Marketing Automation Tools Built for Speed to Lead</h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', marginTop: '1.5rem' }}>
-              Whether you are using your existing CRM or transitioning into a more advanced lead management system, we integrate intuitive AI tools to deliver clear ROI from day one.
+              Whether you keep your existing CRM or transition into Digilari CRM Manager, we integrate the tools that keep every enquiry moving from capture to qualification, response, nurture, and reporting.
             </p>
           </div>
           
@@ -283,10 +283,10 @@ const LeadGeneration = () => {
                 <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>The Digilari Difference</span>
              </div>
              <h2 data-toc="Our Approach" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '1.5rem', lineHeight: 1.1 }}>
-               What Makes Our Approach Different?
+               What Makes Our Marketing Automation Approach Different?
              </h2>
              <p style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)', marginBottom: '3rem' }}>
-               Clear steps that get you launched fast, without the chaos. We are not just setting up systems; we are engineering outcomes that matter.
+               Clear steps that get you launched fast, without the chaos. We are not just setting up software; we are engineering the path from enquiry to qualified sales conversation.
              </p>
              
              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -295,7 +295,7 @@ const LeadGeneration = () => {
                     <TrendingUp size={20}/> Revenue-Driven Outcomes
                  </h3>
                  <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem' }}>
-                   Expect more conversions, better lead engagement, faster sales cycles, and clear ROI from day one of your CRM set-up.
+                   Expect faster response, cleaner qualification, better lead engagement, and clearer ROI from the first stage of your CRM set-up.
                  </p>
                </div>
                
@@ -304,22 +304,22 @@ const LeadGeneration = () => {
                     <Bot size={20}/> Continuous Optimisation
                  </h3>
                  <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem' }}>
-                   Never set-and-forget. Adaptive AI systems and automations update automatically based on performance metrics, meaning your system gets smarter over time.
+                   Never set and forget. Workflows, scoring rules, and nurture sequences are refined against real conversion data, so the system gets sharper over time.
                  </p>
                </div>
             </div>
           </div>
 
           <div>
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '2.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1.5rem' }}>Our CRM Set-Up & Implementation Process</h3>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '2.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1.5rem' }}>Our CRM Set-Up and Implementation Process</h3>
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', left: '27px', top: '1rem', bottom: '1rem', width: '2px', background: 'var(--color-border)' }}></div>
               
               {[
-                { step: "01", title: "Strategy & CRM Audit", desc: "We evaluate your current systems, data flow, and workflows to identify key optimisation areas.", icon: <Search size={20}/> },
-                { step: "02", title: "CRM Set-Up & Customisation", desc: "We configure your CRM for lead capture, advanced segmentation, AI-powered automation, and reporting dashboards.", icon: <Settings size={20}/> },
-                { step: "03", title: "Intuitive AI Tools Integration", desc: "Our team connects tools that empower your CRM to score leads automatically and trigger personalised follow-ups.", icon: <BrainCircuit size={20}/> },
-                { step: "04", title: "Training & Enablement", desc: "We onboard your team so they fully understand how to use the system for daily productivity and ongoing growth.", icon: <CheckCircle2 size={20}/> }
+                { step: "01", title: "Strategy and CRM Audit", desc: "We evaluate enquiry sources, data flow, response times, ownership, lost-lead points, and automation opportunities.", icon: <Search size={20}/> },
+                { step: "02", title: "CRM Set-Up and Customisation", desc: "We configure your CRM for lead capture, routing, segmentation, source attribution, speed-to-lead alerts, and reporting dashboards.", icon: <Settings size={20}/> },
+                { step: "03", title: "Automation and AI Tool Integration", desc: "Our team connects tools that score leads, trigger personalised follow-ups, book appointments, and keep prospects warm through long construction buying cycles.", icon: <BrainCircuit size={20}/> },
+                { step: "04", title: "Training and Enablement", desc: "We onboard your team so sales, estimating, and management know exactly how to use the system each day.", icon: <CheckCircle2 size={20}/> }
               ].map((item, idx) => (
                 <div key={idx} style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', marginBottom: idx !== 3 ? '2.5rem' : 0, position: 'relative' }}>
                   <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'var(--color-secondary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, zIndex: 10, border: '4px solid var(--color-bg)' }}>
@@ -343,7 +343,7 @@ const LeadGeneration = () => {
       <section id="results" className="section border-subtle bg-surface">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 data-toc="Real Results" className="mb-8">Real Results from AI-Driven Lead Management</h2>
+            <h2 data-toc="Real Results" className="mb-8">Real Results from Lead Management and Automation</h2>
           </div>
           
           <div className="grid-3">
@@ -421,8 +421,8 @@ const LeadGeneration = () => {
              <div style={{ position: 'absolute', top: 0, right: 0, width: '300px', height: '300px', background: 'var(--color-primary)', borderRadius: '50%', filter: 'blur(120px)', opacity: '0.1', pointerEvents: 'none' }}></div>
              
              <div style={{ position: 'relative', zIndex: 10 }}>
-               <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Ready to Transform Your Lead Management?</h3>
-               <p style={{ color: 'var(--color-text-muted)', marginBottom: '2.5rem', fontSize: '0.95rem', lineHeight: 1.6 }}>Book your strategy call or request a demo of Digilari CRM Manager with intuitive AI tools in action.</p>
+               <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Ready to Build Your Lead Management System?</h3>
+               <p style={{ color: 'var(--color-text-muted)', marginBottom: '2.5rem', fontSize: '0.95rem', lineHeight: 1.6 }}>Book your strategy call or request a demo of Digilari CRM Manager, speed-to-lead workflows, and marketing automation in action.</p>
                
                <form style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }} onSubmit={(e) => e.preventDefault()}>
                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>

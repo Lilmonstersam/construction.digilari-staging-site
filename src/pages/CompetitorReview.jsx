@@ -31,7 +31,7 @@ const CompetitorReview = () => {
   const togglePlatform = (p) => setPlatforms((cur) => cur.includes(p) ? cur.filter((x) => x !== p) : [...cur, p]);
   const setComp = (i, v) => setCompetitors((cur) => cur.map((c, idx) => idx === i ? v : c));
 
-  const ProgressBar = () => (
+  const renderProgressBar = () => (
     <div style={{ width: '100%', height: '6px', background: 'var(--color-border)', borderRadius: '100px', marginBottom: '3rem', display: 'flex', overflow: 'hidden' }}>
       {[1, 2, 3, 4, 5].map((s) => (
         <div key={s} style={{ width: '20%', height: '100%', background: step >= s ? 'var(--color-secondary)' : 'transparent', transition: 'background 0.5s' }} />
@@ -58,7 +58,7 @@ const CompetitorReview = () => {
     </section>
   );
 
-  const Report = () => (
+  const renderReport = () => (
     <div style={{ marginTop: '4rem', borderTop: '1px solid var(--color-border)', paddingTop: '4rem' }}>
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <span style={{ background: 'rgba(255,94,0,0.1)', color: 'var(--color-primary)', padding: '0.35rem 1rem', borderRadius: '100px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Strategic Intelligence Preview</span>
@@ -272,7 +272,7 @@ const CompetitorReview = () => {
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '1.15rem', maxWidth: '600px', margin: '0 auto' }}>Unlock the data your competitors are hiding. Let us build a roadmap to your digital dominance.</p>
               </div>
 
-              <ProgressBar />
+              {renderProgressBar()}
 
               <div style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '24px', padding: 'clamp(1.5rem, 4vw, 3rem)' }}>
                 <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
@@ -381,7 +381,7 @@ const CompetitorReview = () => {
                 Our team will put together your 3-phase strategy within 3 business days. Unlock the full report below to see exactly where you gap against competitors.
               </p>
               <Link to="/contact" className="btn btn-primary"><Calendar size={18} /> Book Discovery Meeting</Link>
-              <Report />
+              {renderReport()}
             </div>
           )}
         </div>

@@ -195,7 +195,7 @@ const TechnologyStack = ({ service }) => {
 };
 
 // Rich layout pages (LeadGeneration-style)
-const RICH_PAGES = ['seo-agency', 'ppc-agency', 'conversion-rate-optimisation', 'aeo', 'geo', 'zero-click-search'];
+const RICH_PAGES = ['seo-agency', 'ppc-agency', 'conversion-rate-optimisation', 'aeo', 'geo', 'zero-click-search', 'smm', 'facebook', 'instagram', 'linkedin', 'tiktok', 'x'];
 
 const ServicePage = () => {
   const { serviceId, categoryId } = useParams();
@@ -226,7 +226,7 @@ const ServicePage = () => {
   }
 
   if (RICH_PAGES.includes(resolvedId)) {
-    return <RichServiceLayout service={service} serviceId={resolvedId} openFaq={openFaq} setOpenFaq={setOpenFaq} isStickyVisible={isStickyVisible} />;
+    return <RichServiceLayout service={service} openFaq={openFaq} setOpenFaq={setOpenFaq} isStickyVisible={isStickyVisible} />;
   }
 
   return <SimpleServiceLayout service={service} serviceId={resolvedId} />;
@@ -297,7 +297,7 @@ const SimpleServiceLayout = ({ service, serviceId }) => (
   </>
 );
 
-const RichServiceLayout = ({ service, serviceId, openFaq, setOpenFaq, isStickyVisible }) => {
+const RichServiceLayout = ({ service, openFaq, setOpenFaq, isStickyVisible }) => {
   const pillars = service.pillars || [];
   const process = service.process || [];
   const faqs = service.faqs || [];

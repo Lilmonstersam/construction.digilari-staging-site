@@ -5,11 +5,11 @@ import { useRef, useState, useEffect } from 'react';
 import StickyCTA from '../components/StickyCTA';
 
 const methodologyTiles = [
+  { title: "Marketing Automation & CRM", desc: "Speed-to-lead workflows, CRM routing, lead scoring, and follow-up automation for every commercial enquiry.", icon: Zap, link: "/services/lead-generation", color: "var(--color-secondary)" },
   { title: "Construction SEO", desc: "Get found first on Google when builders, estimators, and project managers search for what you supply.", icon: Search, link: "/services/seo-agency", color: "var(--color-primary)" },
   { title: "Google Ads Management", desc: "Hyper-targeted paid media that maximises ROAS and eliminates B2C wastage.", icon: Target, link: "/services/ppc-agency", color: "var(--color-secondary)" },
   { title: "Conversion Optimisation", desc: "Turn existing traffic into high-value project leads through data-driven testing.", icon: TrendingUp, link: "/services/conversion-rate-optimisation", color: "#10b981" },
   { title: "Technical Content Marketing", desc: "Inbound marketing engineered for the construction procurement cycle.", icon: BarChart, link: "/services/inbound-and-content-marketing", color: "var(--color-primary)" },
-  { title: "Lead Management & Automation", desc: "Speed-to-lead automation and CRM that capture, qualify, and convert every enquiry in seconds.", icon: Zap, link: "/services/lead-generation", color: "var(--color-secondary)" },
   { title: "Answer Engine Optimisation", desc: "Optimise for AI-driven search answers across ChatGPT, Perplexity, and Google.", icon: BrainCircuit, link: "/services/aeo", color: "#10b981" },
   { title: "Generative Engine Optimisation", desc: "Build topical authority so AI engines cite your brand as the definitive source.", icon: Globe, link: "/services/geo", color: "var(--color-primary)" },
   { title: "SEO Migration Support", desc: "Protect your rankings during a website redesign with expert migration management.", icon: Shield, link: "/services/seo-migration", color: "var(--color-secondary)" },
@@ -74,18 +74,18 @@ const Home = () => {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
             <div style={{ display: 'inline-block', padding: '0.25rem 0.75rem', background: 'rgba(255, 94, 0, 0.1)', color: 'var(--color-primary)', borderRadius: '100px', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1.5rem', border: '1px solid rgba(255, 94, 0, 0.2)' }}>
-              CONSTRUCTION LEAD GENERATION AGENCY
+              LEAD GENERATION + MARKETING AUTOMATION AGENCY
             </div>
-            <h1 className="mb-4 text-gradient" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>The Construction <span className="text-gradient-primary">Lead Generation Agency</span> for B2B Growth</h1>
+            <h1 className="mb-4 text-gradient" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>The <span className="text-gradient-primary">Lead Generation Agency</span> for Commercial Construction</h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
-              Struggling to turn commercial construction demand into booked work? Generating enquiries is only half the battle. The supplier that responds first, and follows up relentlessly, wins the tender.
+              Digilari is a lead generation agency for commercial construction suppliers. We build the demand engine and the marketing automation system behind it: CRM, speed to lead, lead routing, qualification, and follow-up.
             </p>
             <p style={{ fontSize: '1.05rem', color: 'var(--color-text-muted)', marginBottom: '2rem' }}>
-              Digilari is the lead generation agency for commercial construction. We pair demand generation through SEO, GEO, and paid media with marketing automation, speed to lead, and lead management, so every qualified enquiry is captured, answered in seconds, and converted into pipeline.
+              SEO, paid media, social, and content create the enquiry. The real growth comes when every enquiry is captured, answered in seconds, assigned to the right person, and nurtured until the project is ready to move.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
               <Link to="/contact" className="btn btn-primary">
-                Book Strategy Session <ArrowRight size={20} />
+                Build My Lead Engine <ArrowRight size={20} />
               </Link>
               <Link to="/case-studies/duracube" className="btn btn-secondary">
                 View Our Results
@@ -114,20 +114,28 @@ const Home = () => {
               boxShadow: '0 25px 50px -12px rgba(253, 155, 40, 0.1)'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '2rem' }}>
-                <Shield size={20} color="var(--color-primary)" />
-                <span style={{ fontSize: '0.85rem', color: 'var(--color-primary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Trusted & Certified</span>
+                <Zap size={20} color="var(--color-primary)" />
+                <span style={{ fontSize: '0.85rem', color: 'var(--color-primary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Speed-to-Lead Operating System</span>
               </div>
 
-              {/* Certification Badges Row */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-                <img src={`${import.meta.env.BASE_URL}images/certifications/google-partner.webp`} alt="Google Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-                <img src={`${import.meta.env.BASE_URL}images/certifications/bing-ads-certified.png`} alt="Bing Ads Certified" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-                <img src={`${import.meta.env.BASE_URL}images/certifications/meta-partner.jpeg`} alt="Meta Business Partner" style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+                {[
+                  { k: '01', v: 'Capture', d: 'Forms, calls, chat, ads, and social lead sources' },
+                  { k: '02', v: 'Qualify', d: 'Intent scoring, source attribution, and fit checks' },
+                  { k: '03', v: 'Route', d: 'Instant alerts and ownership for the right sales contact' },
+                  { k: '04', v: 'Nurture', d: 'Email, SMS, and CRM workflows for long sales cycles' }
+                ].map((item) => (
+                  <div key={item.k} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid var(--color-border)', borderRadius: '10px', padding: '1rem', minHeight: '118px' }}>
+                    <div style={{ color: 'var(--color-secondary)', fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.12em', marginBottom: '0.35rem' }}>{item.k}</div>
+                    <div style={{ color: 'var(--color-text)', fontWeight: 800, marginBottom: '0.4rem' }}>{item.v}</div>
+                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', lineHeight: 1.45, margin: 0 }}>{item.d}</p>
+                  </div>
+                ))}
               </div>
 
               <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem' }}>
                 <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', textAlign: 'center', lineHeight: 1.6, margin: 0 }}>
-                  Google Partner, Bing Ads Certified, and Meta Business Partner, serving commercial construction clients across Australia and New Zealand.
+                  Built for commercial construction suppliers that cannot afford slow follow-up, messy spreadsheets, or leads going cold between marketing and sales.
                 </p>
               </div>
             </div>
@@ -140,9 +148,9 @@ const Home = () => {
         <div className="container">
           <div className="text-center mb-8" style={{ maxWidth: '900px', margin: '0 auto 3rem auto' }}>
             <span style={{ display: 'block', color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>Our Methodology</span>
-            <h2 data-toc="Our Methodology">Disruptive Digital Marketing That Drives Construction Leads</h2>
+            <h2 data-toc="Our Methodology">Lead Generation Systems That Move Faster Than Your Competitors</h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem' }}>
-              Standard marketing playbooks typically fail in the commercial construction space. We implement advanced methodologies to ensure your business dominates visibility when project specifiers are asking critical questions.
+              Standard marketing playbooks typically stop at traffic and enquiries. We connect demand generation with CRM, automation, lead management, and reporting so commercial construction opportunities move from first touch to sales follow-up without delay.
             </p>
           </div>
 
@@ -243,9 +251,9 @@ const Home = () => {
 
           <div className="mobile-carousel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto 3rem auto' }}>
             {[
-              { name: 'Growth', price: 'From $1,800/mo', desc: 'Our flexible Digital Partner Program (DPP). One retainer covering whichever channels move the needle, including paid ads, with a dedicated account manager on call.', features: ['Flexible multi-channel retainer (SEO, content, more)', 'Google Ads / Paid Media Management', 'Technical SEO Audit & Fixes', 'Monthly Reporting & Dedicated Account Manager'], color: 'var(--color-secondary)' },
-              { name: 'Accelerate', price: 'From $5,000/mo', desc: 'Multi-channel growth combining SEO, paid media, and CRO for construction businesses ready to scale.', features: ['Everything in Growth', 'Google Ads Management', 'Conversion Rate Optimisation', 'Digital Results Guarantee'], color: 'var(--color-primary)', featured: true },
-              { name: 'Dominate', price: 'Custom', desc: 'Full-service digital marketing command for enterprise construction suppliers and national contractors.', features: ['Everything in Accelerate', 'AEO & GEO Optimisation', 'AI Lead Management & CRM', 'Priority Support & Strategy'], color: '#10b981' }
+              { name: 'Growth', price: 'From $1,800/mo', desc: 'A flexible Digital Partner Programme with the essentials to create and capture more qualified commercial enquiries.', features: ['Flexible multi-channel retainer', 'Lead capture and CRM audit', 'Google Ads / Paid Media Management', 'Monthly Reporting and Dedicated Account Manager'], color: 'var(--color-secondary)' },
+              { name: 'Accelerate', price: 'From $5,000/mo', desc: 'Multi-channel demand generation with speed-to-lead workflows and conversion optimisation for construction businesses ready to scale.', features: ['Everything in Growth', 'Speed-to-lead automation', 'Conversion Rate Optimisation', 'Digital Results Guarantee'], color: 'var(--color-primary)', featured: true },
+              { name: 'Dominate', price: 'Custom', desc: 'Full-service lead generation and automation command for enterprise construction suppliers and national contractors.', features: ['Everything in Accelerate', 'AEO and GEO Optimisation', 'AI Lead Management and CRM', 'Priority Support and Strategy'], color: '#10b981' }
             ].map((pkg, i) => (
               <div key={i} style={{ background: pkg.featured ? 'linear-gradient(145deg, rgba(255,94,0,0.08) 0%, var(--color-surface) 100%)' : 'var(--color-surface)', border: `1px solid ${pkg.featured ? 'var(--color-primary)' : 'var(--color-border)'}`, borderRadius: '16px', padding: '2.5rem 2rem', textAlign: 'left', position: 'relative', overflow: 'hidden', transition: 'transform 0.3s, border-color 0.3s' }} className="pkg-card">
                 {pkg.featured && <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'var(--color-primary)', color: '#0f1115', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '0.2rem 0.6rem', borderRadius: '100px' }}>Most Popular</div>}
@@ -457,9 +465,9 @@ const Home = () => {
       <section className="section" style={{ backgroundColor: 'var(--color-primary)', color: '#0f1115', textAlign: 'center' }}>
         <div className="container">
           <span style={{ display: 'block', color: 'rgba(15, 17, 21, 0.7)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>Book Session</span>
-          <h2 data-toc="Book Session" style={{ color: '#0f1115' }} className="mb-4">Your Strategy Session Awaits</h2>
+          <h2 data-toc="Book Session" style={{ color: '#0f1115' }} className="mb-4">Build a Faster Construction Lead Engine</h2>
           <p style={{ fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto 1.5rem auto', color: '#0f1115' }}>
-            Are you ready to stop losing ground to competitors and start dominating the commercial construction landscape?
+            Get the demand generation, CRM, automation, and lead management system your sales team needs to respond first and follow up properly.
           </p>
           {/* Team faces near CTA */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginBottom: '2rem' }}>

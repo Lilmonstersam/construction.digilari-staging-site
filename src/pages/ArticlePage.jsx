@@ -172,32 +172,26 @@ const ArticlePage = () => {
           {/* Sticky right TOC */}
           {tocItems.length > 0 && (
             <aside className="article-toc-sidebar">
-              <div style={{ position: 'sticky', top: '100px', maxHeight: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '1.5rem', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
-                  <h4 style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-primary)', marginBottom: '1rem', fontWeight: 800, paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border)', flexShrink: 0 }}>On this page</h4>
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.25rem', overflowY: 'auto', minHeight: 0 }}>
+              <div className="article-toc-stack">
+                <nav className="article-toc-card" aria-label="Article sections">
+                  <h4 className="article-toc-title">On this page</h4>
+                  <ul className="article-toc-list">
                     {tocItems.map((item) => (
                       <li key={item.id}>
                         <a
                           href={`#${item.id}`}
                           onClick={(e) => { e.preventDefault(); document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' }); }}
-                          style={{
-                            display: 'block', padding: '0.4rem 0.75rem', borderRadius: '8px', borderLeft: '2px solid transparent', fontSize: activeId === item.id ? '0.95rem' : '0.72rem', fontWeight: activeId === item.id ? 700 : 500,
-                            color: activeId === item.id ? 'var(--color-primary)' : 'var(--color-text-muted)',
-                            background: activeId === item.id ? 'rgba(255, 94, 0, 0.08)' : 'transparent',
-                            borderLeftColor: activeId === item.id ? 'var(--color-primary)' : 'transparent',
-                            textDecoration: 'none', transition: 'all 0.2s', lineHeight: 1.4
-                          }}
+                          className={`article-toc-link ${activeId === item.id ? 'is-active' : ''}`}
                         >
                           {item.text}
                         </a>
                       </li>
                     ))}
                   </ul>
-                </div>
-                <div style={{ flexShrink: 0, background: 'linear-gradient(145deg, rgba(255,94,0,0.08) 0%, var(--color-surface) 100%)', border: '1px solid var(--color-primary)', borderRadius: '16px', padding: '1.5rem', textAlign: 'center' }}>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--color-text)', marginBottom: '1rem', fontWeight: 600 }}>Curious about your own marketing budget?</p>
-                  <Link to="/pricing" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', fontSize: '0.8rem' }}>View Pricing</Link>
+                </nav>
+                <div className="article-side-cta">
+                  <p>Curious about your own marketing budget?</p>
+                  <Link to="/pricing" className="btn btn-primary">View Pricing</Link>
                 </div>
               </div>
             </aside>
@@ -229,6 +223,95 @@ const ArticlePage = () => {
       <style>{`
         @media (min-width: 1000px) {
           .article-grid { grid-template-columns: minmax(0, 1fr) 280px !important; }
+          .article-toc-sidebar {
+            align-self: stretch;
+          }
+          .article-toc-stack {
+            position: sticky;
+            top: 88px;
+            max-height: calc(100vh - 104px);
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+          }
+          .article-toc-card {
+            min-height: 0;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 1rem;
+          }
+          .article-toc-title {
+            flex-shrink: 0;
+            font-size: 0.62rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+            padding-bottom: 0.65rem;
+            border-bottom: 1px solid var(--color-border);
+          }
+          .article-toc-list {
+            min-height: 0;
+            overflow-y: auto;
+            list-style: none;
+            padding: 0 0.15rem 0 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.12rem;
+          }
+          .article-toc-link {
+            display: block;
+            padding: 0.3rem 0.55rem;
+            border-radius: 8px;
+            border-left: 2px solid transparent;
+            color: var(--color-text-muted);
+            font-size: 0.68rem;
+            font-weight: 500;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: color 0.2s, background 0.2s, border-color 0.2s, font-size 0.2s;
+          }
+          .article-toc-link:hover {
+            color: var(--color-text);
+            background: rgba(255,255,255,0.05);
+          }
+          .article-toc-link.is-active {
+            color: var(--color-primary);
+            background: rgba(255, 94, 0, 0.08);
+            border-left-color: var(--color-primary);
+            font-size: 0.86rem;
+            font-weight: 800;
+            line-height: 1.32;
+          }
+          .article-side-cta {
+            flex: 0 0 auto;
+            background: linear-gradient(145deg, rgba(255,94,0,0.08) 0%, var(--color-surface) 100%);
+            border: 1px solid var(--color-primary);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+          }
+          .article-side-cta p {
+            font-size: 0.82rem;
+            color: var(--color-text);
+            margin-bottom: 0.85rem;
+            font-weight: 700;
+            line-height: 1.35;
+          }
+          .article-side-cta .btn {
+            width: 100%;
+            justify-content: center;
+            font-size: 0.76rem;
+            padding: 0.55rem 0.8rem;
+          }
         }
         @media (max-width: 999px) {
           .article-toc-sidebar { display: none; }

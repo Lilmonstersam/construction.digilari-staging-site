@@ -19,6 +19,8 @@ import ArticlesHub from './pages/ArticlesHub';
 import TeamMemberPage from './pages/TeamMemberPage';
 import { articlesData } from './data/articles';
 
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 // Routes article slugs that have full content to ArticlePage; others fall back
 // to the standard placeholder so existing links don't break.
 function ArticleRouter() {
@@ -29,7 +31,7 @@ function ArticleRouter() {
 
 function App() {
   return (
-    <Router basename="/construction.digilari-staging-site">
+    <Router basename={routerBasename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
