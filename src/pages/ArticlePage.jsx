@@ -172,17 +172,17 @@ const ArticlePage = () => {
           {/* Sticky right TOC */}
           {tocItems.length > 0 && (
             <aside className="article-toc-sidebar">
-              <div style={{ position: 'sticky', top: '100px' }}>
-                <div style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '1.5rem' }}>
-                  <h4 style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-primary)', marginBottom: '1rem', fontWeight: 800, paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border)' }}>On this page</h4>
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+              <div style={{ position: 'sticky', top: '100px', maxHeight: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                <div style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '1.5rem', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
+                  <h4 style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-primary)', marginBottom: '1rem', fontWeight: 800, paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border)', flexShrink: 0 }}>On this page</h4>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.25rem', overflowY: 'auto', minHeight: 0 }}>
                     {tocItems.map((item) => (
                       <li key={item.id}>
                         <a
                           href={`#${item.id}`}
                           onClick={(e) => { e.preventDefault(); document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' }); }}
                           style={{
-                            display: 'block', padding: '0.4rem 0.75rem', borderRadius: '8px', borderLeft: '2px solid transparent', fontSize: '0.82rem', fontWeight: activeId === item.id ? 700 : 500,
+                            display: 'block', padding: '0.4rem 0.75rem', borderRadius: '8px', borderLeft: '2px solid transparent', fontSize: activeId === item.id ? '0.95rem' : '0.72rem', fontWeight: activeId === item.id ? 700 : 500,
                             color: activeId === item.id ? 'var(--color-primary)' : 'var(--color-text-muted)',
                             background: activeId === item.id ? 'rgba(255, 94, 0, 0.08)' : 'transparent',
                             borderLeftColor: activeId === item.id ? 'var(--color-primary)' : 'transparent',
@@ -195,7 +195,7 @@ const ArticlePage = () => {
                     ))}
                   </ul>
                 </div>
-                <div style={{ marginTop: '1.5rem', background: 'linear-gradient(145deg, rgba(255,94,0,0.08) 0%, var(--color-surface) 100%)', border: '1px solid var(--color-primary)', borderRadius: '16px', padding: '1.5rem', textAlign: 'center' }}>
+                <div style={{ flexShrink: 0, background: 'linear-gradient(145deg, rgba(255,94,0,0.08) 0%, var(--color-surface) 100%)', border: '1px solid var(--color-primary)', borderRadius: '16px', padding: '1.5rem', textAlign: 'center' }}>
                   <p style={{ fontSize: '0.9rem', color: 'var(--color-text)', marginBottom: '1rem', fontWeight: 600 }}>Curious about your own marketing budget?</p>
                   <Link to="/pricing" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', fontSize: '0.8rem' }}>View Pricing</Link>
                 </div>

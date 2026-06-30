@@ -108,8 +108,8 @@ const LeadGeneration = () => {
   return (
     <>
       <Helmet>
-        <title>AI Lead Management & Automation | Digilari Construction</title>
-        <meta name="description" content="Transform your commercial construction leads into revenue with intelligent CRM setups and AI automation tools." />
+        <title>Lead Generation Agency for Construction | Marketing Automation & Speed to Lead</title>
+        <meta name="description" content="Digilari is a construction lead generation agency. Our marketing automation and lead management systems deliver speed to lead, capturing, qualifying, and converting every commercial enquiry." />
       </Helmet>
       
       {/* Smart Sticky Banner */}
@@ -138,7 +138,7 @@ const LeadGeneration = () => {
         <div className="container text-center" style={{ position: 'relative', zIndex: 10 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--color-border)', padding: '0.25rem 1rem', borderRadius: '100px', marginBottom: '2.5rem' }}>
             <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-secondary)', animation: 'pulse 2s infinite' }}></span>
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)' }}>Digilari CRM Manager</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)' }}>Construction Lead Generation Agency</span>
           </div>
           
           <h1 className="text-gradient" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', marginBottom: '2rem' }}>
@@ -150,7 +150,7 @@ const LeadGeneration = () => {
           </h1>
           
           <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto', lineHeight: 1.6 }}>
-            Transform your leads into revenue for your commercial construction business with an intelligent CRM set-up. As a specialist construction marketing agency, we integrate intuitive AI tools that automate engagement, qualification, and conversion.
+            Generating enquiries is only half the job. As a construction lead generation agency, we add the marketing automation and lead management layer that responds in seconds, qualifies every lead, and converts demand into revenue. Speed to lead is the difference between a quote and a competitor's contract.
           </p>
           
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
@@ -179,7 +179,7 @@ const LeadGeneration = () => {
             {[
               { icon: <Target size={32} />, title: "Qualify & Prioritise", desc: "Automatically qualify and prioritise leads based on behaviour and intent. Stop wasting time on unqualified prospects and focus entirely on high-value accounts.", color: 'var(--color-secondary)' },
               { icon: <Users size={32} />, title: "Personalise at Scale", desc: "Deliver highly personalised experiences to thousands of prospects simultaneously. Make every lead feel like they are your only focus, without the manual effort.", color: 'var(--color-primary)' },
-              { icon: <Zap size={32} />, title: "Instant Response", desc: "Reduce response times from hours to seconds. Engage leads instantly when their intent is highest, helping you close more revenue with significantly less manual work.", color: '#10b981' }
+              { icon: <Zap size={32} />, title: "Speed to Lead", desc: "Reduce response times from hours to seconds. Speed to lead means engaging every enquiry the moment intent is highest, before a competitor does, and it is the single biggest lever on conversion.", color: '#10b981' }
             ].map((pillar, i) => (
               <div key={i} className="card" style={{ background: 'var(--color-bg)' }}>
                 <div style={{ width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: pillar.color, marginBottom: '1.5rem', border: '1px solid var(--color-border)' }}>

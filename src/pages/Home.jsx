@@ -9,7 +9,7 @@ const methodologyTiles = [
   { title: "Google Ads Management", desc: "Hyper-targeted paid media that maximises ROAS and eliminates B2C wastage.", icon: Target, link: "/services/ppc-agency", color: "var(--color-secondary)" },
   { title: "Conversion Optimisation", desc: "Turn existing traffic into high-value project leads through data-driven testing.", icon: TrendingUp, link: "/services/conversion-rate-optimisation", color: "#10b981" },
   { title: "Technical Content Marketing", desc: "Inbound marketing engineered for the construction procurement cycle.", icon: BarChart, link: "/services/inbound-and-content-marketing", color: "var(--color-primary)" },
-  { title: "AI Lead Management", desc: "Intelligent CRM setup with AI tools that automate engagement and conversion.", icon: Zap, link: "/services/lead-generation", color: "var(--color-secondary)" },
+  { title: "Lead Management & Automation", desc: "Speed-to-lead automation and CRM that capture, qualify, and convert every enquiry in seconds.", icon: Zap, link: "/services/lead-generation", color: "var(--color-secondary)" },
   { title: "Answer Engine Optimisation", desc: "Optimise for AI-driven search answers across ChatGPT, Perplexity, and Google.", icon: BrainCircuit, link: "/services/aeo", color: "#10b981" },
   { title: "Generative Engine Optimisation", desc: "Build topical authority so AI engines cite your brand as the definitive source.", icon: Globe, link: "/services/geo", color: "var(--color-primary)" },
   { title: "SEO Migration Support", desc: "Protect your rankings during a website redesign with expert migration management.", icon: Shield, link: "/services/seo-migration", color: "var(--color-secondary)" },
@@ -53,15 +53,15 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Digital Marketing for Commercial Construction & Contractors | Digilari Construction</title>
-        <meta name="description" content="Discover Digilari Construction's specialist digital marketing for commercial construction suppliers. We understand your sales cycles and how to win work digitally." />
+        <title>Construction Lead Generation Agency | Marketing Automation & Speed to Lead | Digilari</title>
+        <meta name="description" content="Digilari is a construction lead generation agency. We combine marketing automation, speed to lead, and lead management to turn commercial construction demand into a qualified pipeline." />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Digilari Construction",
-              "description": "Digital marketing for commercial construction suppliers and specialist contractors across Australia and New Zealand.",
+              "description": "Lead generation agency for commercial construction suppliers and specialist contractors across Australia and New Zealand, specialising in marketing automation, speed to lead, and lead management.",
               "url": "https://digilari.com.au"
             }
           `}
@@ -74,14 +74,14 @@ const Home = () => {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
             <div style={{ display: 'inline-block', padding: '0.25rem 0.75rem', background: 'rgba(255, 94, 0, 0.1)', color: 'var(--color-primary)', borderRadius: '100px', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1.5rem', border: '1px solid rgba(255, 94, 0, 0.2)' }}>
-              SPECIALIST CONSTRUCTION MARKETING
+              CONSTRUCTION LEAD GENERATION AGENCY
             </div>
-            <h1 className="mb-4 text-gradient" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>The Construction <span className="text-gradient-primary">Marketing Agency</span> for B2B Growth</h1>
+            <h1 className="mb-4 text-gradient" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>The Construction <span className="text-gradient-primary">Lead Generation Agency</span> for B2B Growth</h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
-              Are you struggling to capture high-value commercial construction projects in a crowded digital landscape? We know that winning commercial tenders requires building technical authority before the RFP is even issued.
+              Struggling to turn commercial construction demand into booked work? Generating enquiries is only half the battle. The supplier that responds first, and follows up relentlessly, wins the tender.
             </p>
             <p style={{ fontSize: '1.05rem', color: 'var(--color-text-muted)', marginBottom: '2rem' }}>
-              Digilari Construction is the definitive construction marketing partner for specialist contractors and commercial suppliers. Through advanced SEO, GEO, and intent-driven paid media, we turn the procurement research phase into your competitive advantage.
+              Digilari is the lead generation agency for commercial construction. We pair demand generation through SEO, GEO, and paid media with marketing automation, speed to lead, and lead management, so every qualified enquiry is captured, answered in seconds, and converted into pipeline.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
               <Link to="/contact" className="btn btn-primary">
